@@ -108,7 +108,6 @@
                         <b>Email:&#160;</b>
                         <xsl:value-of select="contactEmail" />
                     </td>
-                    
                   </tr>
                 </table>
               </div>
