@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database Name="Tourism2" Class="MembershipDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=JUSTIN-PC;Initial Catalog=Tourism2;Persist Security Info=True;User ID=sa" SettingsObjectName="ProductCatalogue.MembershipServices.Properties.Settings" SettingsPropertyName="Tourism2ConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.UserProfile" Member="UserProfiles">
+    <Type Name="UserProfile">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="email" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="password" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="username" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="creationDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="UserProfile_UserProfileRole" Member="UserProfileRoles" ThisKey="id" OtherKey="profileId" Type="UserProfileRole" />
+    </Type>
+  </Table>
+  <Table Name="dbo.UserRole" Member="UserRoles">
+    <Type Name="UserRole">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="roleName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="UserRole_UserProfileRole" Member="UserProfileRoles" ThisKey="id" OtherKey="roleId" Type="UserProfileRole" />
+    </Type>
+  </Table>
+  <Table Name="dbo.UserProfileRole" Member="UserProfileRoles">
+    <Type Name="UserProfileRole">
+      <Column Name="profileId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="roleId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="UserProfile_UserProfileRole" Member="UserProfile" ThisKey="profileId" OtherKey="id" Type="UserProfile" IsForeignKey="true" />
+      <Association Name="UserRole_UserProfileRole" Member="UserRole" ThisKey="roleId" OtherKey="id" Type="UserRole" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.GetRolesForUser" Method="GetRolesForUser">
+    <Parameter Name="username" Type="System.String" DbType="VarChar(50)" />
+    <ElementType Name="GetRolesForUserResult">
+      <Column Name="roleName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+</Database>

@@ -1,0 +1,104 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="prodCat.Master.cs" Inherits="WebApplication.prodCat" %>
+<%@ Register TagPrefix="uc" TagName="AuthWidget" Src="~/UserControls/AuthWidget.ascx" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+<head id="Head1" runat="server">  
+    <title>Product Catalogue</title>
+    <link href="Styles/prodCat.css" rel="stylesheet" type="text/css" />
+    <link href="Styles/jquery.wysiwyg.css" rel="stylesheet" type="text/css" />
+    
+    <script type="text/javascript" src="<%= Page.ResolveClientUrl("~/Scripts/jquery-1.6.2.min.js") %>"></script>
+    <script type="text/javascript" src="<%= Page.ResolveClientUrl("~/Scripts/jquery-ui-1.8.16.custom.min.js") %>"></script>
+    <script type="text/javascript" src="<%= Page.ResolveClientUrl("~/Scripts/jquery.maxlength.js") %>"></script>
+	<script type="text/javascript" src="<%= Page.ResolveClientUrl("~/Scripts/jquery.supersleight.js") %>"></script>
+
+    <asp:ContentPlaceHolder id="cphHeadContent" runat="server"> </asp:ContentPlaceHolder>
+    <script type="text/javascript">
+    	$(document).ready(function () {
+    		$("#content_wrap,.masthead_logo,.tourism_logo,.main_nav").supersleight();
+    		$(".mega").hover(
+	            function () {
+	            	$(this).addClass("hovering");
+	            },
+	            function () {
+	            	$(this).removeClass("hovering");
+	            }
+            );
+    	});
+    </script>
+</head> 
+<body>  
+<form id="form1" runat="server">
+	<div id="main_wrap" class="clearfix">
+		<div id="body_wrap" class="clearfix">
+			<div id="masthead" class="clearfix">
+				<div class="masthead_top clearfix">
+					<div class="tourism_logo"><a href="http://novascotia.com">Nova Scotia Tourism</a></div>
+					<div class="masthead_logo">Product Catalogue</div>
+				</div>
+				<div class="masthead_nav">
+					<div class="task_nav clearfix">
+                        <uc:AuthWidget runat="server" ID="ucAuthWidget" />
+					</div>
+                    <div class="main_nav clearfix">
+						<ul class="clearfix">
+							<li class="first mega"><span class="mn_r_cap"></span><a id="mn_business" href="~/Admin/Business/Index.aspx" runat="server"><span class="mn_tab">Business</span></a>
+                                <div class="menu clearfix">
+                                    <ul>
+                                        <li class="clearfix"><a href="~/Admin/Business/Index.aspx" runat="server"><span>Search Business</span></a></li>
+                                        <li class="clearfix"><a href="~/Admin/Business/Add.aspx" runat="server"><span>Add Business</span></a></li>
+                                    </ul>
+                                </div>
+                            </li>
+							<li class="mega"><a id="mn_contacts" href="~/Admin/Contact/Index.aspx" runat="server"><span class="mn_tab">Contacts</span></a>
+                                <div class="menu">
+                                    <ul>
+                                        <li class="clearfix"><a href="~/Admin/Contact/Index.aspx" runat="server"><span>Search Contacts</span></a></li>
+                                        <li class="clearfix"><a href="~/Admin/Contact/Add.aspx" runat="server"><span>Add Contacts</span></a></li>
+                                    </ul>
+                                </div>
+                            </li>
+							<li class="mega"><a id="mn_products" href="~/Admin/Product/Index.aspx" runat="server"><span class="mn_tab">Products</span></a>
+                                <div class="menu">
+                                    <ul>
+                                        <li class="clearfix"><a href="~/Admin/Product/Index.aspx" runat="server"><span>Search Products</span></a></li>
+                                        <li class="clearfix"><a href="~/Admin/Product/Add.aspx" runat="server"><span>Add Products</span></a></li>
+                                    </ul>
+                                </div>
+                            </li>
+							<li class="last mega"><a id="mn_reports" href="#"><span class="mn_tab">Reports</span></a><span class="mn_l_cap"></span>
+                                <div class="menu">
+                                    <ul>
+                                        <li class="clearfix"><a href="~/Admin/Product/Report/PrintExport.aspx" runat="server"><span>Print Export</span></a></li>
+                                        <li class="clearfix"><a href="~/Admin/Product/Report/PrintTranslation.aspx" runat="server"><span>Print Translation</span></a></li>
+                                        <li class="clearfix"><a href="~/Admin/Product/Report/WebTranslation.aspx" runat="server"><span>Web Translation</span></a></li>
+                                        <li class="clearfix"><a href="~/Admin/Product/Report/PrintGuideForms.aspx" runat="server"><span>Form Generation</span></a></li>
+                                    </ul>
+                                </div>
+                            </li>
+						</ul>
+					</div>
+				</div>
+			</div>
+	
+			<div id="content_wrap" class="clearfix">
+				<div class="content clearfix">
+					<asp:ContentPlaceHolder id="cphMainContent" runat="server"></asp:ContentPlaceHolder>
+				</div>
+			</div><!-- /end content_wrap -->
+	
+		</div><!-- /end body_wrap -->
+	
+		<div id="footer_wrap" class="clearfix">
+			<div id="footer" class="clearfix">
+				<div class="footer_right"></div>
+				<div class="footer_left"></div>
+			</div>
+		</div><!-- /end footer_wrap -->
+	
+	</div><!-- /end main_wrap -->
+</form>
+</body> 
+</html> 

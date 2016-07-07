@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="ProductCatalogue3" Class="ResearchDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=CORUSCANT64\COR2008;Initial Catalog=ProductCatalogue3;Integrated Security=True" SettingsObjectName="ProductCatalogue.DataAccess.Properties.Settings" SettingsPropertyName="ProductCatalogue3ConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.AccommodationOccupancy" Member="AccommodationOccupancies">
+    <Type Name="AccommodationOccupancy">
+      <Column Name="productId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="reportDate" Type="System.DateTime" DbType="DateTime NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="licenseNumber" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="accommodationTypeId" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="starClassRating" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="daysOpen" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="unitsAvailable" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="totalUnitsSold" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="totalGuests" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="vacationPct" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="businessPct" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="conventionPct" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="motorcoachPct" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="otherPct" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="lastModifiedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CampgroundOccupancy" Member="CampgroundOccupancies">
+    <Type Name="CampgroundOccupancy">
+      <Column Name="productId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="reportDate" Type="System.DateTime" DbType="DateTime NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="licenseNumber" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="campgroundTypeId" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="starClassRating" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="daysOpen" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="seasonalAvailable" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="shortTermAvailable" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="seasonalSold" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="shortTermSold" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="totalGuests" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="nsTents" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="canTents" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="usTents" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="intTents" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="nsRvs" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="canRvs" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="usRvs" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="intRvs" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="nsCabins" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="canCabins" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="usCabins" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="intCabins" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="lastModifiedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.GetVarianceReport" Method="GetVarianceReport">
+    <Parameter Name="startMonth" Type="System.Int32" DbType="Int" />
+    <Parameter Name="startYear" Type="System.Int32" DbType="Int" />
+    <Parameter Name="endMonth" Type="System.Int32" DbType="Int" />
+    <Parameter Name="endYear" Type="System.Int32" DbType="Int" />
+    <Parameter Name="variance" Type="System.Int32" DbType="Int" />
+    <Parameter Name="varianceByAmount" Type="System.Boolean" DbType="Bit" />
+    <ElementType Name="GetVarianceReportResult">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="licenseNumber" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="productName" Type="System.String" DbType="NVarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="communityName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="regionName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="startUnitsSold" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="endUnitsSold" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="percentageDifference" Type="System.Decimal" DbType="Decimal(8,2)" CanBeNull="true" />
+      <Column Name="amountDifference" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.GetCampVarianceReport" Method="GetCampVarianceReport">
+    <Parameter Name="startMonth" Type="System.Int32" DbType="Int" />
+    <Parameter Name="startYear" Type="System.Int32" DbType="Int" />
+    <Parameter Name="endMonth" Type="System.Int32" DbType="Int" />
+    <Parameter Name="endYear" Type="System.Int32" DbType="Int" />
+    <Parameter Name="variance" Type="System.Int32" DbType="Int" />
+    <Parameter Name="varianceByAmount" Type="System.Boolean" DbType="Bit" />
+    <ElementType Name="GetCampVarianceReportResult">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="licenseNumber" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="productName" Type="System.String" DbType="NVarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="communityName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="regionName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="startUnitsSold" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="endUnitsSold" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="percentageDifference" Type="System.Decimal" DbType="Decimal(8,2)" CanBeNull="true" />
+      <Column Name="amountDifference" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.CalculateOpenProperties" Method="CalculateOpenProperties">
+    <Parameter Name="reportDate" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="productIds" Type="System.String" DbType="VarChar(MAX)" />
+    <ElementType Name="CalculateOpenPropertiesResult">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+</Database>

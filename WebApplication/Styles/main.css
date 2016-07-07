@@ -1,0 +1,17 @@
+﻿/*
+CSS for Itinerary Planner
+
+colors:
+pale blue:			#e7f1fa
+light blue:			#eaf2fa
+med blue:			#badced
+dark blue:			#31556f
+aqua:				#108eaf
+
+*/
+
+
+.section_toggle a					{ display:block; width:33px; height:33px; text-indent:-99999px; background:transparent url(../Images/view_toggle.gif) 0 0 no-repeat; cursor:pointer; }
+.section_toggle.plus a				{ background-position:0 -41px; }
+.section_toggle.minus a				{ background-position:0 0; }
+

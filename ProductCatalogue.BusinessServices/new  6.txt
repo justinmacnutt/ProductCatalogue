@@ -1,0 +1,826 @@
+<option class="Northumberland" value="471">Abercrombie</option>
+<option class="CapeBretonIsland BrasDor" value="648">Aberdeen</option>
+<option class="FundyShore" value="412">Advocate Harbour</option>
+<option class="Northumberland" value="517">Afton</option>
+<option class="FundyShore" value="288">Albany Cross</option>
+<option class="CapeBretonIsland FleurDeLis" value="672">Albert Bridge</option>
+<option class="FundyShore" value="256">Allain's Creek</option>
+<option class="Northumberland" value="462">Alma</option>
+<option class="Northumberland" value="419">Amherst</option>
+<option class="FundyShore" value="417">Amherst Point</option>
+<option class="Northumberland" value="422">Amherst Shore</option>
+<option class="FundyShore" value="257">Annapolis Royal</option>
+<option class="Northumberland" value="499">Antigonish</option>
+<option class="Yarmouth" value="197">Arcadia</option>
+<option class="FundyShore" value="342">Ardoise</option>
+<option class="Yarmouth" value="192">Argyle</option>
+<option class="Yarmouth" value="190">Argyle Sound</option>
+<option class="CapeBretonIsland FleurDeLis" value="656">Arichat</option>
+<option class="Northumberland" value="490">Arisaig</option>
+<option class="FundyShore" value="818">Arlington</option>
+<option class="FundyShore" value="795">Ashdale</option>
+<option class="EasternShore" value="750">Aspen</option>
+<option class="SouthShore" value="54">Aspotogan</option>
+<option class="CapeBretonIsland CabotTrail" value="583">Aspy Bay</option>
+<option class="FundyShore" value="296">Auburn</option>
+<option class="Northumberland" value="522">Auld's Cove</option>
+<option class="FundyShore" value="346">Avondale</option>
+<option class="FundyShore" value="297">Aylesford</option>
+<option class="CapeBretonIsland CabotTrail" value="557">Baddeck</option>
+<option class="CapeBretonIsland CabotTrail" value="561">Baddeck Bay</option>
+<option class="CapeBretonIsland CabotTrail" value="560">Baddeck Forks</option>
+<option class="CapeBretonIsland CabotTrail" value="556">Baddeck Inlet</option>
+<option class="Northumberland" value="436">Balfron</option>
+<option class="Northumberland" value="493">Ballantyne's Cove</option>
+<option class="Northumberland" value="438">Balmoral Mills</option>
+<option class="Yarmouth" value="217">Bangor</option>
+<option class="Northumberland" value="482">Barney's River</option>
+<option class="CapeBretonIsland BrasDor" value="640">Barrachois</option>
+<option class="SouthShore" value="181">Barrington</option>
+<option class="SouthShore" value="182">Barrington Passage</option>
+<option class="SouthShore" value="80">Barss Corner</option>
+<option class="FundyShore" value="243">Barton</option>
+<option class="FundyShore" value="395">Bass River</option>
+<option class="CapeBretonIsland CabotTrail" value="585">Bay St. Lawrence</option>
+<option class="FundyShore" value="247">Bay View</option>
+<option class="Northumberland" value="516">Bayfield</option>
+<option class="Northumberland" value="434">Bayhead</option>
+<option class="SouthShore" value="93">Bayport</option>
+<option class="SouthShore" value="33">Bayside</option>
+<option class="SouthShore" value="55">Bayswater</option>
+<option class="SouthShore" value="139">Beach Meadows</option>
+<option class="FundyShore" value="249">Bear River</option>
+<option class="HalifaxMetro" value="10">Beaver Bank</option>
+<option class="FundyShore" value="379">Beaver Brook</option>
+<option class="CapeBretonIsland BrasDor" value="638">Beaver Cove</option>
+<option class="Yarmouth" value="210">Beaver River</option>
+<option class="HalifaxMetro" value="21">Bedford</option>
+<option class="CapeBretonIsland CabotTrail" value="562">Beinn Bhreagh</option>
+<option class="CapeBretonIsland CabotTrail" value="572">Belle Côte</option>
+<option class="Yarmouth" value="224">Belliveau Cove</option>
+<option class="FundyShore" value="352">Belnan</option>
+<option class="CapeBretonIsland BrasDor" value="631">Ben Eoin</option>
+<option class="FundyShore" value="300">Berwick</option>
+<option class="FundyShore" value="384">Bible Hill</option>
+<option class="CapeBretonIsland CabotTrail" value="559">Big Baddeck</option>
+<option class="CapeBretonIsland BrasDor" value="647">Big Bras d'Or</option>
+<option class="CapeBretonIsland CabotTrail" value="558">Big Farm</option>
+<option class="CapeBretonIsland CabotTrail" value="564">Big Harbour</option>
+<option class="Northumberland" value="485">Big Island</option>
+<option class="SouthShore" value="35">Big Lake</option>
+<option class="CapeBretonIsland BrasDor" value="630">Big Pond</option>
+<option class="SouthShore" value="61">Big Tancook Island</option>
+<option class="CapeBretonIsland CabotTrail" value="600">Birch Plain</option>
+<option class="SouthShore" value="168">Birchtown</option>
+<option class="SouthShore" value="51">Birchy Head</option>
+<option class="SouthShore" value="47">Black Point</option>
+<option class="FundyShore" value="321">Black River</option>
+<option class="FundyShore" value="302">Black Rock</option>
+<option class="CapeBretonIsland FleurDeLis" value="691">Blacketts Lake</option>
+<option class="SouthShore" value="179">Blanche</option>
+<option class="SouthShore" value="56">Blandford</option>
+<option class="SouthShore" value="73">Blockhouse</option>
+<option class="FundyShore" value="326">Blomidon</option>
+<option class="SouthShore" value="88">Blue Rocks</option>
+<option class="CapeBretonIsland BrasDor" value="614">Blues Mills</option>
+<option class="CapeBretonIsland BrasDor" value="639">Boisdale</option>
+<option class="CapeBretonIsland BrasDor" value="643">Boularderie</option>
+<option class="SouthShore" value="46">Boutilier's Point</option>
+<option class="EasternShore" value="772">Boylston</option>
+<option class="Northumberland" value="455">Braeshore</option>
+<option class="FundyShore" value="358">Bramber</option>
+<option class="CapeBretonIsland BrasDor" value="642">Bras d'Or</option>
+<option class="CapeBretonIsland CabotTrail" value="602">Breton Cove</option>
+<option class="FundyShore" value="274">Bridgetown</option>
+<option class="SouthShore" value="120">Bridgewater</option>
+<option class="Northumberland" value="503">Brierly Brook</option>
+<option class="FundyShore" value="245">Brighton</option>
+<option class="SouthShore" value="131">Broad Cove (South Shore)</option>
+<option class="CapeBretonIsland CeilidhTrail" value="548">Broad Cove (Cape Breton)</option>
+<option class="CapeBretonIsland CeilidhTrail" value="539">Brook Village</option>
+<option class="FundyShore" value="376">Brookfield</option>
+<option class="FundyShore" value="347">Brooklyn (Fundy Shore)</option>
+<option class="SouthShore" value="140">Brooklyn (South Shore)</option>
+<option class="Northumberland" value="441">Brule</option>
+<option class="CapeBretonIsland CabotTrail" value="552">Bucklaw</option>
+<option class="FundyShore" value="362">Burntcoat</option>
+<option class="SouthShore" value="108">Caledonia</option>
+<option class="FundyShore" value="359">Cambridge (Annapolis Valley)</option>
+<option class="FundyShore" value="309">Cambridge (Minas Basin)</option>
+<option class="FundyShore" value="317">Canaan</option>
+<option class="FundyShore" value="303">Canada Creek</option>
+<option class="FundyShore" value="324">Canning</option>
+<option class="EasternShore" value="767">Canso</option>
+<option class="CapeBretonIsland CabotTrail" value="573">Cap Le Moine</option>
+<option class="CapeBretonIsland CabotTrail" value="578">Cape Breton Highlands NP</option>
+<option class="FundyShore" value="411">Cape d'Or</option>
+<option class="Yarmouth" value="201">Cape Forchu</option>
+<option class="Northumberland" value="494">Cape George</option>
+<option class="Northumberland" value="779">Cape George Point</option>
+<option class="Northumberland" value="789">Cape John</option>
+<option class="CapeBretonIsland CabotTrail" value="582">Cape North</option>
+<option class="SouthShore" value="183">Cape Sable Island</option>
+<option class="Yarmouth" value="214">Cape St. Mary's</option>
+<option class="CapeBretonIsland CabotTrail" value="586">Capstick</option>
+<option class="Northumberland" value="454">Caribou</option>
+<option class="EasternShore" value="715">Caribou Mines</option>
+<option class="Northumberland" value="447">Caribou River</option>
+<option class="Yarmouth" value="207">Carleton</option>
+<option class="EasternShore" value="828">Carrolls Corner</option>
+<option class="CapeBretonIsland FleurDeLis" value="673">Catalone</option>
+<option class="FundyShore" value="240">Central Grove</option>
+<option class="SouthShore" value="90">Centre</option>
+<option class="FundyShore" value="354">Centre Burlington</option>
+<option class="FundyShore" value="313">Centreville</option>
+<option class="CapeBretonIsland BrasDor" value="627">Chapel Island</option>
+<option class="SouthShore" value="135">Charleston</option>
+<option class="EasternShore" value="760">Charlos Cove</option>
+<option class="Yarmouth" value="199">Chebogue Point</option>
+<option class="Yarmouth" value="203">Chegoggin</option>
+<option class="HalifaxMetro" value="810">Cherry Brook</option>
+<option class="SouthShore" value="132">Cherry Hill</option>
+<option class="SouthShore" value="60">Chester</option>
+<option class="SouthShore" value="63">Chester Basin</option>
+<option class="CapeBretonIsland CabotTrail" value="577">Chéticamp</option>
+<option class="FundyShore" value="357">Cheverie</option>
+<option class="CapeBretonIsland CeilidhTrail" value="551">Chimney Corner</option>
+<option class="FundyShore" value="308">Chipman Brook</option>
+<option class="CapeBretonIsland BrasDor" value="636">Christmas Island</option>
+<option class="Yarmouth" value="222">Church Point</option>
+<option class="SouthShore" value="169">Churchover</option>
+<option class="EasternShore" value="728">Clam Bay</option>
+<option class="EasternShore" value="729">Clam Harbour</option>
+<option class="SouthShore" value="184">Clark's Harbour</option>
+<option class="SouthShore" value="72">Clearland</option>
+<option class="FundyShore" value="254">Clementsport</option>
+<option class="FundyShore" value="253">Clementsvale</option>
+<option class="CapeBretonIsland FleurDeLis" value="651">Cleveland</option>
+<option class="SouthShore" value="177">Clyde River</option>
+<option class="Northumberland" value="502">Clydesdale</option>
+<option class="FundyShore" value="310">Coldbrook</option>
+<option class="HalifaxMetro" value="23">Cole Harbour (Halifax Metro)</option>
+<option class="EasternShore" value="761">Cole Harbour (Eastern Shore)</option>
+<option class="Yarmouth" value="220">Comeauville</option>
+<option class="Yarmouth" value="791">Concession</option>
+<option class="SouthShore" value="121">Conquerall Bank</option>
+<option class="SouthShore" value="116">Cookville</option>
+<option class="Yarmouth" value="219">Corberrie</option>
+<option class="SouthShore" value="92">Corkum's Island</option>
+<option class="CapeBretonIsland CabotTrail" value="580">Corney Brook</option>
+<option class="FundyShore" value="251">Cornwallis</option>
+<option class="EasternShore" value="827">Country Harbour</option>
+<option class="EasternShore" value="764">Country Harbour</option>
+<option class="EasternShore" value="699">Cow Bay</option>
+<option class="CapeBretonIsland CeilidhTrail" value="529">Craigmore</option>
+<option class="CapeBretonIsland CeilidhTrail" value="526">Crandall Road</option>
+<option class="CapeBretonIsland CeilidhTrail" value="528">Creignish</option>
+<option class="SouthShore" value="127">Crescent Beach</option>
+<option class="Northumberland" value="513">Cribbons Point</option>
+<option class="FundyShore" value="803">Cross Roads</option>
+<option class="SouthShore" value="801">Crousetown</option>
+<option class="FundyShore" value="806">Culloden</option>
+<option class="CapeBretonIsland FleurDeLis" value="659">D'Escousse</option>
+<option class="Yarmouth" value="206">Darlings Lake</option>
+<option class="HalifaxMetro" value="22">Dartmouth</option>
+<option class="SouthShore" value="113">Dayspring</option>
+<option class="Yarmouth" value="202">Dayton</option>
+<option class="EasternShore" value="717">Dean</option>
+<option class="SouthShore" value="812">Deans Corner</option>
+<option class="FundyShore" value="386">Debert</option>
+<option class="FundyShore" value="250">Deep Brook</option>
+<option class="SouthShore" value="57">Deep Cove</option>
+<option class="Yarmouth" value="205">Deerfield</option>
+<option class="FundyShore" value="268">Delap's Cove</option>
+<option class="Northumberland" value="440">Denmark</option>
+<option class="FundyShore" value="246">Digby</option>
+<option class="FundyShore" value="407">Diligent River</option>
+<option class="CapeBretonIsland CabotTrail" value="588">Dingwall</option>
+<option class="CapeBretonIsland FleurDeLis" value="682">Dominion</option>
+<option class="CapeBretonIsland FleurDeLis" value="802">Donkin</option>
+<option class="SouthShore" value="126">Dublin Shore</option>
+<option class="CapeBretonIsland BrasDor" value="622">Dundee</option>
+<option class="CapeBretonIsland CeilidhTrail" value="549">Dunvegan</option>
+<option class="Northumberland" value="452">Durham</option>
+<option class="Northumberland" value="439">Earltown</option>
+<option class="CapeBretonIsland BrasDor" value="632">East Bay</option>
+<option class="SouthShore" value="138">East Berlin</option>
+<option class="Northumberland" value="813">East Branch</option>
+<option class="SouthShore" value="59">East Chester</option>
+<option class="EasternShore" value="707">East Chezzetcook</option>
+<option class="FundyShore" value="290">East Dalhousie</option>
+<option class="SouthShore" value="34">East Dover</option>
+<option class="FundyShore" value="238">East Ferry</option>
+<option class="FundyShore" value="350">East Gore</option>
+<option class="SouthShore" value="796">East Jordan</option>
+<option class="SouthShore" value="98">East LaHave</option>
+<option class="CapeBretonIsland CeilidhTrail" value="544">East Lake Ainslie</option>
+<option class="EasternShore" value="700">East Lawrencetown (Eastern Shore)</option>
+<option class="CapeBretonIsland CabotTrail" value="570">East Margaree</option>
+<option class="FundyShore" value="778">East Mountain</option>
+<option class="EasternShore" value="720">East Petpeswick</option>
+<option class="SouthShore" value="58">East River</option>
+<option class="EasternShore" value="734">East Ship Harbour</option>
+<option class="SouthShore" value="152">East Side Port l'Hébert</option>
+<option class="HalifaxMetro" value="698">Eastern Passage</option>
+<option class="FundyShore" value="374">Eastville</option>
+<option class="FundyShore" value="397">Economy</option>
+<option class="CapeBretonIsland FleurDeLis" value="783">Edwardsville</option>
+<option class="Northumberland" value="476">Egerton</option>
+<option class="EasternShore" value="712">Elderbank</option>
+<option class="FundyShore" value="792">Ellershouse</option>
+<option class="HalifaxMetro" value="1">Elmsdale</option>
+<option class="HalifaxMetro" value="2">Enfield</option>
+<option class="CapeBretonIsland CabotTrail" value="607">Englishtown</option>
+<option class="CapeBretonIsland BrasDor" value="633">Eskasoni</option>
+<option class="HalifaxMetro" value="6">Fall River</option>
+<option class="FundyShore" value="335">Falmouth</option>
+<option class="SouthShore" value="94">Feltzen South</option>
+<option class="SouthShore" value="799">First Peninsula</option>
+<option class="SouthShore" value="91">First South</option>
+<option class="FundyShore" value="399">Five Islands</option>
+<option class="CapeBretonIsland FleurDeLis" value="694">Florence</option>
+<option class="FundyShore" value="389">Folly Lake</option>
+<option class="Northumberland" value="418">Fort Lawrence</option>
+<option class="SouthShore" value="65">Forties</option>
+<option class="EasternShore" value="765">Fox Island</option>
+<option class="FundyShore" value="408">Fox River</option>
+<option class="Northumberland" value="511">Fraser Mills</option>
+<option class="FundyShore" value="241">Freeport</option>
+<option class="Northumberland" value="475">French River</option>
+<option class="CapeBretonIsland FleurDeLis" value="807">French Road</option>
+<option class="CapeBretonIsland FleurDeLis" value="666">Gabarus</option>
+<option class="EasternShore" value="718">Gaetz Brook</option>
+<option class="SouthShore" value="86">Garden Lots</option>
+<option class="Northumberland" value="481">Garden of Eden</option>
+<option class="FundyShore" value="337">Garland's Crossing</option>
+<option class="FundyShore" value="329">Gaspereau</option>
+<option class="Yarmouth" value="196">Gavelton</option>
+<option class="EasternShore" value="710">Gays River</option>
+<option class="CapeBretonIsland BrasDor" value="641">George's River</option>
+<option class="FundyShore" value="229">Gilbert's Cove</option>
+<option class="CapeBretonIsland FleurDeLis" value="680">Glace Bay</option>
+<option class="SouthShore" value="42">Glen Haven</option>
+<option class="SouthShore" value="40">Glen Margaret</option>
+<option class="Northumberland" value="469">Glencoe</option>
+<option class="CapeBretonIsland CeilidhTrail" value="536">Glencoe Mills</option>
+<option class="CapeBretonIsland BrasDor" value="613">Glendale</option>
+<option class="CapeBretonIsland CeilidhTrail" value="537">Glendyer</option>
+<option class="FundyShore" value="388">Glenholme</option>
+<option class="CapeBretonIsland CeilidhTrail" value="540">Glenville</option>
+<option class="HalifaxMetro" value="3">Goffs</option>
+<option class="SouthShore" value="66">Gold River</option>
+<option class="EasternShore" value="756">Goldboro</option>
+<option class="EasternShore" value="746">Goldenville</option>
+<option class="EasternShore" value="755">Goshen</option>
+<option class="FundyShore" value="306">Grafton</option>
+<option class="EasternShore" value="705">Grand Desert</option>
+<option class="CapeBretonIsland CabotTrail" value="575">Grand Etang</option>
+<option class="HalifaxMetro" value="4">Grand Lake</option>
+<option class="CapeBretonIsland FleurDeLis" value="667">Grand Mira North</option>
+<option class="CapeBretonIsland BrasDor" value="634">Grand Narrows</option>
+<option class="FundyShore" value="331">Grand Pré</option>
+<option class="CapeBretonIsland FleurDeLis" value="663">Grand River</option>
+<option class="SouthShore" value="815">Granite Village</option>
+<option class="FundyShore" value="264">Granville Beach</option>
+<option class="FundyShore" value="270">Granville Centre</option>
+<option class="FundyShore" value="263">Granville Ferry</option>
+<option class="FundyShore" value="817">Graywood</option>
+<option class="FundyShore" value="390">Great Village</option>
+<option class="FundyShore" value="383">Greenfield (Fundy Shore)</option>
+<option class="SouthShore" value="104">Greenfield (South Shore)</option>
+<option class="Northumberland" value="458">Greenhill</option>
+<option class="FundyShore" value="319">Greenwich</option>
+<option class="FundyShore" value="295">Greenwood</option>
+<option class="Yarmouth" value="223">Grosses Coques</option>
+<option class="CapeBretonIsland BrasDor" value="822">Groves Point</option>
+<option class="Northumberland" value="430">Gulf Shore</option>
+<option class="FundyShore" value="231">Gulliver's Cove</option>
+<option class="SouthShore" value="170">Gunning Cove</option>
+<option class="EasternShore" value="771">Guysborough</option>
+<option class="SouthShore" value="39">Hackett's Cove</option>
+<option class="EasternShore" value="782">Half Island Cove</option>
+<option class="EasternShore" value="769">Halfway Cove</option>
+<option class="FundyShore" value="401">Halfway River</option>
+<option class="HalifaxMetro" value="25">Halifax</option>
+<option class="FundyShore" value="314">Hall's Harbour</option>
+<option class="HalifaxMetro" value="13">Hammonds Plains</option>
+<option class="FundyShore" value="275">Hampton</option>
+<option class="FundyShore" value="333">Hantsport</option>
+<option class="Northumberland" value="497">Harbour Centre</option>
+<option class="CapeBretonIsland CeilidhTrail" value="532">Harbourview</option>
+<option class="FundyShore" value="301">Harbourville</option>
+<option class="HalifaxMetro" value="14">Harrietsfield</option>
+<option class="SouthShore" value="28">Hatchet Lake</option>
+<option class="Northumberland" value="521">Havre Boucher</option>
+<option class="EasternShore" value="709">Head of Chezzetcook</option>
+<option class="EasternShore" value="723">Head of Jeddore</option>
+<option class="SouthShore" value="45">Head of St. Margaret's Bay</option>
+<option class="Northumberland" value="515">Heatherton</option>
+<option class="SouthShore" value="119">Hebbville</option>
+<option class="Yarmouth" value="204">Hebron</option>
+<option class="SouthShore" value="87">Heckman's Island</option>
+<option class="SouthShore" value="787">Hemford</option>
+<option class="HalifaxMetro" value="18">Herring Cove</option>
+<option class="SouthShore" value="111">Hibernia</option>
+<option class="FundyShore" value="377">Hilden</option>
+<option class="FundyShore" value="809">Hillgrove</option>
+<option class="CapeBretonIsland CeilidhTrail" value="538">Hillsboro</option>
+<option class="CapeBretonIsland FleurDeLis" value="671">Hillside</option>
+<option class="CapeBretonIsland BrasDor" value="781">Hillside Boularderie</option>
+<option class="Northumberland" value="467">Hopewell</option>
+<option class="CapeBretonIsland FleurDeLis" value="674">Horne's Road</option>
+<option class="FundyShore" value="332">Hortonville</option>
+<option class="CapeBretonIsland FleurDeLis" value="689">Howie Centre</option>
+<option class="SouthShore" value="49">Hubbards</option>
+<option class="SouthShore" value="27">Hubley</option>
+<option class="CapeBretonIsland CabotTrail" value="554">Hunter's Mountain</option>
+<option class="CapeBretonIsland FleurDeLis" value="669">Huntington</option>
+<option class="SouthShore" value="147">Hunts Point</option>
+<option class="CapeBretonIsland CabotTrail" value="604">Indian Brook</option>
+<option class="SouthShore" value="38">Indian Harbour</option>
+<option class="SouthShore" value="69">Indian Point</option>
+<option class="SouthShore" value="175">Ingomar</option>
+<option class="CapeBretonIsland CabotTrail" value="594">Ingonish</option>
+<option class="CapeBretonIsland CabotTrail" value="596">Ingonish Beach</option>
+<option class="CapeBretonIsland CabotTrail" value="595">Ingonish Centre</option>
+<option class="CapeBretonIsland CabotTrail" value="598">Ingonish Ferry</option>
+<option class="CapeBretonIsland CabotTrail" value="597">Ingonish Harbour</option>
+<option class="CapeBretonIsland CeilidhTrail" value="547">Inverness</option>
+<option class="CapeBretonIsland BrasDor" value="635">Iona</option>
+<option class="CapeBretonIsland BrasDor" value="629">Irish Cove</option>
+<option class="CapeBretonIsland BrasDor" value="821">Irondale</option>
+<option class="EasternShore" value="754">Isaac's Harbour</option>
+<option class="SouthShore" value="130">Italy Cross</option>
+<option class="Northumberland" value="504">James River</option>
+<option class="CapeBretonIsland FleurDeLis" value="657">Janvrin Island</option>
+<option class="CapeBretonIsland FleurDeLis" value="658">Janvrin's Harbour</option>
+<option class="EasternShore" value="726">Jeddore Oyster Pond</option>
+<option class="CapeBretonIsland CabotTrail" value="606">Jersey Cove</option>
+<option class="FundyShore" value="413">Joggins</option>
+<option class="CapeBretonIsland BrasDor" value="628">Johnstown</option>
+<option class="SouthShore" value="165">Jordan Bay</option>
+<option class="SouthShore" value="163">Jordan Falls</option>
+<option class="SouthShore" value="164">Jordan Ferry</option>
+<option class="CapeBretonIsland CeilidhTrail" value="531">Judique</option>
+<option class="CapeBretonIsland FleurDeLis" value="670">Juniper Mountain</option>
+<option class="SouthShore" value="110">Kempt</option>
+<option class="CapeBretonIsland BrasDor" value="644">Kempt Head</option>
+<option class="FundyShore" value="356">Kempt Shore</option>
+<option class="Yarmouth" value="208">Kemptville</option>
+<option class="FundyShore" value="353">Kennetcook</option>
+<option class="FundyShore" value="312">Kentville</option>
+<option class="HalifaxMetro" value="16">Ketch Harbour</option>
+<option class="SouthShore" value="96">Kingsburg</option>
+<option class="FundyShore" value="325">Kingsport</option>
+<option class="FundyShore" value="294">Kingston</option>
+<option class="FundyShore" value="305">Kinsman's Corner</option>
+<option class="Northumberland" value="488">Knoydart</option>
+<option class="CapeBretonIsland FleurDeLis" value="661">L'Ardoise</option>
+<option class="SouthShore" value="105">Labelle</option>
+<option class="SouthShore" value="125">LaHave</option>
+<option class="SouthShore" value="128">LaHave Islands</option>
+<option class="EasternShore" value="727">Lake Charlotte</option>
+<option class="EasternShore" value="702">Lake Echo</option>
+<option class="FundyShore" value="788">Lake George</option>
+<option class="FundyShore" value="259">Lake La Rose</option>
+<option class="FundyShore" value="233">Lake Midway</option>
+<option class="FundyShore" value="406">Lakelands</option>
+<option class="Northumberland" value="495">Lakevale</option>
+<option class="FundyShore" value="311">Lakeville</option>
+<option class="Northumberland" value="498">Lanark</option>
+<option class="Northumberland" value="461">Lansdowne</option>
+<option class="EasternShore" value="759">Larry's River</option>
+<option class="FundyShore" value="364">Latties Brook</option>
+<option class="FundyShore" value="279">Lawrencetown (Fundy Shore)</option>
+<option class="CapeBretonIsland FleurDeLis" value="823">Lennox</option>
+<option class="CapeBretonIsland FleurDeLis" value="654">Lennox Passage</option>
+<option class="FundyShore" value="258">Lequille</option>
+<option class="Northumberland" value="425">Linden</option>
+<option class="CapeBretonIsland FleurDeLis" value="685">Lingan</option>
+<option class="Northumberland" value="520">Linwood</option>
+<option class="EasternShore" value="743">Liscomb</option>
+<option class="EasternShore" value="744">Liscomb Mills</option>
+<option class="Northumberland" value="487">Lismore</option>
+<option class="CapeBretonIsland FleurDeLis" value="696">Little Bras d'Or</option>
+<option class="Yarmouth" value="221">Little Brook</option>
+<option class="EasternShore" value="766">Little Dover</option>
+<option class="EasternShore" value="730">Little Harbour (Eastern Shore)</option>
+<option class="SouthShore" value="157">Little Harbour (South Shore)</option>
+<option class="Northumberland" value="472">Little Harbour (Northumberland Shore)</option>
+<option class="CapeBretonIsland FleurDeLis" value="676">Little Lorraine</option>
+<option class="CapeBretonIsland FleurDeLis" value="695">Little Pond</option>
+<option class="FundyShore" value="235">Little River</option>
+<option class="SouthShore" value="141">Liverpool</option>
+<option class="Northumberland" value="492">Livingstone Cove</option>
+<option class="Northumberland" value="457">Loch Broom</option>
+<option class="EasternShore" value="751">Lochiel Lake</option>
+<option class="SouthShore" value="161">Lockeport</option>
+<option class="FundyShore" value="391">Londonderry</option>
+<option class="CapeBretonIsland CeilidhTrail" value="530">Long Point</option>
+<option class="Northumberland" value="421">Lorneville</option>
+<option class="SouthShore" value="156">Louis Head</option>
+<option class="CapeBretonIsland FleurDeLis" value="675">Louisbourg</option>
+<option class="CapeBretonIsland FleurDeLis" value="653">Louisdale</option>
+<option class="Yarmouth" value="191">Lower Argyle</option>
+<option class="Northumberland" value="484">Lower Barney's River</option>
+<option class="FundyShore" value="398">Lower Economy</option>
+<option class="FundyShore" value="400">Lower Five Islands</option>
+<option class="HalifaxMetro" value="20">Lower Sackville</option>
+<option class="FundyShore" value="365">Lower Selma</option>
+<option class="Northumberland" value="507">Lower South River</option>
+<option class="FundyShore" value="777">Lower Truro</option>
+<option class="Yarmouth" value="804">Lower West Pubnico</option>
+<option class="Northumberland" value="505">Lower West River</option>
+<option class="SouthShore" value="85">Lunenburg</option>
+<option class="SouthShore" value="160">Lydgate</option>
+<option class="CapeBretonIsland BrasDor" value="626">Lynche River</option>
+<option class="Northumberland" value="450">Lyons Brook</option>
+<option class="CapeBretonIsland CeilidhTrail" value="534">Mabou</option>
+<option class="CapeBretonIsland CeilidhTrail" value="535">Mabou Harbour</option>
+<option class="SouthShore" value="76">Mader's Cove</option>
+<option class="SouthShore" value="71">Mahone Bay</option>
+<option class="CapeBretonIsland FleurDeLis" value="677">Main-à-dieu</option>
+<option class="SouthShore" value="74">Maitland (South Shore)</option>
+<option class="FundyShore" value="367">Maitland (Fundy Shore)</option>
+<option class="FundyShore" value="252">Maitland Bridge</option>
+<option class="Northumberland" value="433">Malagash</option>
+<option class="Northumberland" value="819">Malagash Point</option>
+<option class="CapeBretonIsland BrasDor" value="619">Malagawatch</option>
+<option class="Northumberland" value="491">Malignant Cove</option>
+<option class="SouthShore" value="78">Maplewood</option>
+<option class="CapeBretonIsland BrasDor" value="620">Marble Mountain</option>
+<option class="CapeBretonIsland CabotTrail" value="569">Margaree</option>
+<option class="CapeBretonIsland CabotTrail" value="566">Margaree Centre</option>
+<option class="CapeBretonIsland CabotTrail" value="568">Margaree Forks</option>
+<option class="CapeBretonIsland CabotTrail" value="571">Margaree Harbour</option>
+<option class="CapeBretonIsland CabotTrail" value="565">Margaree Valley</option>
+<option class="FundyShore" value="291">Margaretsville</option>
+<option class="CapeBretonIsland FleurDeLis" value="668">Marion Bridge</option>
+<option class="EasternShore" value="824">Markland</option>
+<option class="SouthShore" value="62">Marriott's Cove</option>
+<option class="Northumberland" value="442">Marshville</option>
+<option class="Northumberland" value="483">Marshy Hope</option>
+<option class="SouthShore" value="83">Martin's Brook</option>
+<option class="SouthShore" value="775">Martin's Point</option>
+<option class="SouthShore" value="68">Martin's River</option>
+<option class="FundyShore" value="340">Martock</option>
+<option class="FundyShore" value="387">Masstown</option>
+<option class="Yarmouth" value="213">Mavillette</option>
+<option class="Northumberland" value="489">McArras Brook</option>
+<option class="CapeBretonIsland BrasDor" value="637">McKinnon's Harbour</option>
+<option class="Northumberland" value="479">McPherson's Mills</option>
+<option class="Northumberland" value="510">Meadow Green</option>
+<option class="EasternShore" value="711">Meagher's Grant</option>
+<option class="CapeBretonIsland CabotTrail" value="587">Meat Cove</option>
+<option class="FundyShore" value="330">Melanson</option>
+<option class="CapeBretonIsland FleurDeLis" value="808">Membertou</option>
+<option class="Northumberland" value="477">Merigomish</option>
+<option class="SouthShore" value="143">Mersey Point</option>
+<option class="Yarmouth" value="215">Meteghan</option>
+<option class="Yarmouth" value="216">Meteghan River</option>
+<option class="SouthShore" value="174">Middle Clyde River</option>
+<option class="SouthShore" value="99">Middle LaHave</option>
+<option class="EasternShore" value="713">Middle Musquodoboit</option>
+<option class="SouthShore" value="75">Middle New Cornwall</option>
+<option class="SouthShore" value="171">Middle Ohio</option>
+<option class="CapeBretonIsland CabotTrail" value="555">Middle River</option>
+<option class="HalifaxMetro" value="12">Middle Sackville</option>
+<option class="Yarmouth" value="189">Middle West Pubnico</option>
+<option class="SouthShore" value="112">Middlefield</option>
+<option class="FundyShore" value="282">Middleton</option>
+<option class="FundyShore" value="370">Milford (Shubenacadie area)</option>
+<option class="FundyShore" value="260">Milford (Upper Clements area)</option>
+<option class="SouthShore" value="50">Mill Cove</option>
+<option class="EasternShore" value="784">Mill Lake</option>
+<option class="SouthShore" value="134">Mill Village</option>
+<option class="FundyShore" value="378">Millbrook</option>
+<option class="SouthShore" value="142">Milton</option>
+<option class="FundyShore" value="415">Minudie</option>
+<option class="CapeBretonIsland FleurDeLis" value="678">Mira</option>
+<option class="SouthShore" value="106">Molega</option>
+<option class="Northumberland" value="519">Monastery</option>
+<option class="FundyShore" value="393">Montrose</option>
+<option class="SouthShore" value="144">Moose Harbour</option>
+<option class="FundyShore" value="404">Moose River</option>
+<option class="EasternShore" value="714">Moose River Gold Mines</option>
+<option class="FundyShore" value="299">Morristown (Fundy Shore)</option>
+<option class="Northumberland" value="496">Morristown (Northumberland Shore)</option>
+<option class="EasternShore" value="742">Moser River</option>
+<option class="FundyShore" value="334">Mount Denson</option>
+<option class="FundyShore" value="280">Mount Hanley</option>
+<option class="HalifaxMetro" value="9">Mount Uniacke</option>
+<option class="EasternShore" value="523">Mulgrave</option>
+<option class="EasternShore" value="735">Murphy Cove</option>
+<option class="FundyShore" value="382">Murray's Siding</option>
+<option class="EasternShore" value="719">Musquodoboit Harbour</option>
+<option class="EasternShore" value="724">Myers Point</option>
+<option class="FundyShore" value="416">Nappan</option>
+<option class="CapeBretonIsland CabotTrail" value="592">Neil's Harbour</option>
+<option class="FundyShore" value="287">New Albany</option>
+<option class="FundyShore" value="226">New Edinburgh</option>
+<option class="SouthShore" value="102">New Germany</option>
+<option class="Northumberland" value="470">New Glasgow</option>
+<option class="EasternShore" value="757">New Harbour</option>
+<option class="CapeBretonIsland BrasDor" value="646">New Harris</option>
+<option class="FundyShore" value="318">New Minas</option>
+<option class="SouthShore" value="64">New Ross</option>
+<option class="CapeBretonIsland FleurDeLis" value="686">New Victoria</option>
+<option class="CapeBretonIsland FleurDeLis" value="684">New Waterford</option>
+<option class="SouthShore" value="77">Newburne</option>
+<option class="SouthShore" value="118">Newcombville</option>
+<option class="FundyShore" value="343">Newport</option>
+<option class="FundyShore" value="345">Newport Landing</option>
+<option class="FundyShore" value="338">Newport Station</option>
+<option class="FundyShore" value="285">Nictaux</option>
+<option class="FundyShore" value="286">Nictaux Falls</option>
+<option class="FundyShore" value="351">Nine Mile River</option>
+<option class="FundyShore" value="363">Noel</option>
+<option class="SouthShore" value="103">North Brookfield</option>
+<option class="CapeBretonIsland CabotTrail" value="567">North East Margaree</option>
+<option class="Northumberland" value="501">North Grant</option>
+<option class="CapeBretonIsland CabotTrail" value="593">North Ingonish</option>
+<option class="FundyShore" value="244">North Range</option>
+<option class="FundyShore" value="385">North River</option>
+<option class="CapeBretonIsland CabotTrail" value="610">North River Bridge</option>
+<option class="CapeBretonIsland CabotTrail" value="603">North Shore</option>
+<option class="CapeBretonIsland FleurDeLis" value="692">North Sydney</option>
+<option class="Northumberland" value="423">Northport</option>
+<option class="SouthShore" value="52">Northwest Cove</option>
+<option class="CapeBretonIsland CabotTrail" value="553">Nyanza</option>
+<option class="SouthShore" value="114">Oak Hill</option>
+<option class="HalifaxMetro" value="829">Oakfield</option>
+<option class="SouthShore" value="70">Oakland</option>
+<option class="EasternShore" value="770">Ogden</option>
+<option class="FundyShore" value="380">Old Barns</option>
+<option class="FundyShore" value="785">Onslow</option>
+<option class="CapeBretonIsland BrasDor" value="616">Orangedale</option>
+<option class="EasternShore" value="721">Ostrea Lake</option>
+<option class="Northumberland" value="427">Oxford</option>
+<option class="FundyShore" value="278">Paradise</option>
+<option class="SouthShore" value="79">Parkdale</option>
+<option class="FundyShore" value="269">Parker's Cove</option>
+<option class="FundyShore" value="405">Parrsboro</option>
+<option class="SouthShore" value="37">Peggy's Cove</option>
+<option class="SouthShore" value="124">Pentz</option>
+<option class="CapeBretonIsland CabotTrail" value="579">Petit Etang</option>
+<option class="SouthShore" value="129">Petite Riviàre</option>
+<option class="Northumberland" value="456">Pictou</option>
+<option class="Northumberland" value="793">Pictou Island</option>
+<option class="Northumberland" value="465">Pictou Landing</option>
+<option class="Northumberland" value="478">Piedmont</option>
+<option class="SouthShore" value="115">Pine Grove</option>
+<option class="Northumberland" value="473">Pine Tree</option>
+<option class="CapeBretonIsland CabotTrail" value="581">Pleasant Bay</option>
+<option class="SouthShore" value="159">Pleasant Point</option>
+<option class="SouthShore" value="122">Pleasantville</option>
+<option class="FundyShore" value="230">Plympton</option>
+<option class="CapeBretonIsland CabotTrail" value="576">Point Cross</option>
+<option class="CapeBretonIsland FleurDeLis" value="662">Point Michaud</option>
+<option class="Northumberland" value="514">Pomquet</option>
+<option class="Northumberland" value="486">Ponds</option>
+<option class="FundyShore" value="344">Poplar Grove</option>
+<option class="CapeBretonIsland CabotTrail" value="563">Port Bevis</option>
+<option class="EasternShore" value="753">Port Bickerton</option>
+<option class="SouthShore" value="176">Port Clyde</option>
+<option class="EasternShore" value="740">Port Dufferin</option>
+<option class="EasternShore" value="762">Port Felix</option>
+<option class="FundyShore" value="281">Port George</option>
+<option class="FundyShore" value="409">Port Greville</option>
+<option class="CapeBretonIsland CeilidhTrail" value="524">Port Hastings</option>
+<option class="CapeBretonIsland FleurDeLis" value="525">Port Hawkesbury</option>
+<option class="EasternShore" value="752">Port Hilford</option>
+<option class="CapeBretonIsland CeilidhTrail" value="533">Port Hood</option>
+<option class="Northumberland" value="426">Port Howe</option>
+<option class="SouthShore" value="151">Port Joli</option>
+<option class="SouthShore" value="153">Port l'Hébert</option>
+<option class="FundyShore" value="276">Port Lorne</option>
+<option class="Yarmouth" value="209">Port Maitland</option>
+<option class="SouthShore" value="136">Port Medway</option>
+<option class="CapeBretonIsland FleurDeLis" value="679">Port Morien</option>
+<option class="SouthShore" value="149">Port Mouton</option>
+<option class="Northumberland" value="428">Port Philip</option>
+<option class="FundyShore" value="265">Port Royal</option>
+<option class="EasternShore" value="773">Port Shoreham</option>
+<option class="FundyShore" value="266">Port Wade</option>
+<option class="FundyShore" value="320">Port Williams</option>
+<option class="FundyShore" value="394">Portaupique</option>
+<option class="EasternShore" value="708">Porter's Lake</option>
+<option class="HalifaxMetro" value="17">Portuguese Cove</option>
+<option class="EasternShore" value="701">Preston</option>
+<option class="SouthShore" value="32">Prospect</option>
+<option class="Yarmouth" value="187">Pubnico</option>
+<option class="Northumberland" value="429">Pugwash</option>
+<option class="SouthShore" value="48">Queensland</option>
+<option class="EasternShore" value="768">Queensport</option>
+<option class="FundyShore" value="349">Rawdon</option>
+<option class="CapeBretonIsland FleurDeLis" value="681">Reserve Mines</option>
+<option class="CapeBretonIsland CabotTrail" value="605">River Bennet</option>
+<option class="CapeBretonIsland FleurDeLis" value="660">River Bourgeois</option>
+<option class="CapeBretonIsland BrasDor" value="618">River Denys</option>
+<option class="FundyShore" value="414">River Hebert</option>
+<option class="Northumberland" value="443">River John</option>
+<option class="CapeBretonIsland FleurDeLis" value="683">River Ryan</option>
+<option class="SouthShore" value="97">Riverport</option>
+<option class="FundyShore" value="800">Riversdale</option>
+<option class="CapeBretonIsland BrasDor" value="780">Roberta</option>
+<option class="Yarmouth" value="193">Roberts Island</option>
+<option class="SouthShore" value="158">Rockland</option>
+<option class="SouthShore" value="95">Rose Bay</option>
+<option class="CapeBretonIsland BrasDor" value="645">Ross Ferry</option>
+<option class="SouthShore" value="154">Sable River</option>
+<option class="Yarmouth" value="212">Salmon River</option>
+<option class="EasternShore" value="725">Salmon River Bridge</option>
+<option class="Northumberland" value="460">Salt Springs</option>
+<option class="HalifaxMetro" value="15">Sambro</option>
+<option class="CapeBretonIsland BrasDor" value="624">Sampsonville</option>
+<option class="EasternShore" value="774">Sand Point</option>
+<option class="FundyShore" value="234">Sandy Cove</option>
+<option class="SouthShore" value="166">Sandy Point</option>
+<option class="Yarmouth" value="218">Saulnierville</option>
+<option class="FundyShore" value="327">Scots Bay</option>
+<option class="Northumberland" value="451">Scotsburn</option>
+<option class="CapeBretonIsland CeilidhTrail" value="545">Scotsville</option>
+<option class="SouthShore" value="41">Seabright</option>
+<option class="Northumberland" value="445">Seafoam</option>
+<option class="EasternShore" value="704">Seaforth</option>
+<option class="SouthShore" value="84">Second Peninsula</option>
+<option class="FundyShore" value="366">Selma</option>
+<option class="SouthShore" value="31">Shad Bay</option>
+<option class="SouthShore" value="185">Shag Harbour</option>
+<option class="EasternShore" value="697">Shearwater</option>
+<option class="EasternShore" value="738">Sheet Harbour</option>
+<option class="FundyShore" value="322">Sheffield Mills</option>
+<option class="SouthShore" value="167">Shelburne</option>
+<option class="EasternShore" value="747">Sherbrooke</option>
+<option class="SouthShore" value="786">Sherwood</option>
+<option class="SouthShore" value="814">Sherwood</option>
+<option class="Northumberland" value="424">Shinimicas Bridge</option>
+<option class="EasternShore" value="731">Ship Harbour</option>
+<option class="FundyShore" value="371">Shubenacadie</option>
+<option class="Northumberland" value="453">Six Mile Brook</option>
+<option class="CapeBretonIsland CabotTrail" value="601">Skir Dhu</option>
+<option class="Yarmouth" value="776">Sluice Point</option>
+<option class="CapeBretonIsland CabotTrail" value="590">Smelt Brook</option>
+<option class="FundyShore" value="248">Smith's Cove</option>
+<option class="EasternShore" value="739">Sober Island</option>
+<option class="FundyShore" value="316">South Alton</option>
+<option class="SouthShore" value="107">South Brookfield</option>
+<option class="FundyShore" value="292">South Farmington</option>
+<option class="CapeBretonIsland CabotTrail" value="589">South Harbour</option>
+<option class="CapeBretonIsland CabotTrail" value="612">South Haven</option>
+<option class="CapeBretonIsland CeilidhTrail" value="541">South Lake Ainslie</option>
+<option class="FundyShore" value="368">South Maitland</option>
+<option class="FundyShore" value="261">South Milford</option>
+<option class="FundyShore" value="348">South Rawdon</option>
+<option class="Northumberland" value="512">South River Lake</option>
+<option class="Northumberland" value="508">South Side Harbour</option>
+<option class="CapeBretonIsland BrasDor" value="615">South Side Whycocomagh Bay</option>
+<option class="FundyShore" value="402">Southampton</option>
+<option class="SouthShore" value="53">Southwest Cove</option>
+<option class="CapeBretonIsland CeilidhTrail" value="550">Southwest Margaree</option>
+<option class="SouthShore" value="150">Southwest Port Mouton</option>
+<option class="FundyShore" value="410">Spencer's Island</option>
+<option class="FundyShore" value="289">Springfield</option>
+<option class="FundyShore" value="403">Springhill</option>
+<option class="Northumberland" value="468">Springville</option>
+<option class="EasternShore" value="737">Spry Bay</option>
+<option class="HalifaxMetro" value="19">Spryfield</option>
+<option class="Yarmouth" value="794">St. Alphonse</option>
+<option class="Northumberland" value="509">St. Andrew's</option>
+<option class="CapeBretonIsland CabotTrail" value="611">St. Ann's</option>
+<option class="Yarmouth" value="225">St. Bernard</option>
+<option class="FundyShore" value="339">St. Croix</option>
+<option class="FundyShore" value="273">St. Croix Cove</option>
+<option class="CapeBretonIsland FleurDeLis" value="664">St. Esprit</option>
+<option class="CapeBretonIsland BrasDor" value="623">St. George's Channel</option>
+<option class="CapeBretonIsland CabotTrail" value="574">St. Joseph du Moine</option>
+<option class="CapeBretonIsland CabotTrail" value="584">St. Margaret Village</option>
+<option class="CapeBretonIsland BrasDor" value="625">St. Peter's</option>
+<option class="FundyShore" value="323">Starr's Point</option>
+<option class="Yarmouth" value="194">Ste-Anne-du-Ruisseau</option>
+<option class="Northumberland" value="466">Stellarton</option>
+<option class="FundyShore" value="372">Stewiacke</option>
+<option class="FundyShore" value="373">Stewiacke East</option>
+<option class="EasternShore" value="749">Stillwater</option>
+<option class="SouthShore" value="89">Stonehurst East</option>
+<option class="CapeBretonIsland CabotTrail" value="820">Sugarloaf</option>
+<option class="FundyShore" value="355">Summerville</option>
+<option class="SouthShore" value="148">Summerville Centre</option>
+<option class="SouthShore" value="82">Sunnybrook</option>
+<option class="Yarmouth" value="790">Surette's Island</option>
+<option class="Northumberland" value="474">Sutherland's River</option>
+<option class="CapeBretonIsland FleurDeLis" value="687">Sydney</option>
+<option class="CapeBretonIsland FleurDeLis" value="690">Sydney Forks</option>
+<option class="CapeBretonIsland FleurDeLis" value="693">Sydney Mines</option>
+<option class="CapeBretonIsland FleurDeLis" value="688">Sydney River</option>
+<option class="Northumberland" value="500">Sylvan Valley</option>
+<option class="EasternShore" value="736">Tangier</option>
+<option class="SouthShore" value="43">Tantallon</option>
+<option class="CapeBretonIsland CabotTrail" value="609">Tarbot</option>
+<option class="CapeBretonIsland CabotTrail" value="608">Tarbotvale</option>
+<option class="Northumberland" value="435">Tatamagouche</option>
+<option class="FundyShore" value="361">Tennycape</option>
+<option class="SouthShore" value="30">Terence Bay</option>
+<option class="Northumberland" value="437">The Falls</option>
+<option class="SouthShore" value="178">Thomasville</option>
+<option class="Northumberland" value="480">Thorburn</option>
+<option class="Northumberland" value="449">Three Brooks</option>
+<option class="EasternShore" value="703">Three Fathom Harbour</option>
+<option class="FundyShore" value="237">Tiddville</option>
+<option class="Northumberland" value="420">Tidnish</option>
+<option class="Northumberland" value="797">Tidnish Bridge</option>
+<option class="HalifaxMetro" value="26">Timberlea</option>
+<option class="FundyShore" value="239">Tiverton</option>
+<option class="Northumberland" value="446">Toney River</option>
+<option class="EasternShore" value="758">Tor Bay</option>
+<option class="Northumberland" value="518">Tracadie</option>
+<option class="FundyShore" value="293">Tremont</option>
+<option class="Northumberland" value="464">Trenton</option>
+<option class="CapeBretonIsland CeilidhTrail" value="543">Trout Brook</option>
+<option class="CapeBretonIsland CeilidhTrail" value="527">Troy</option>
+<option class="FundyShore" value="381">Truro</option>
+<option class="FundyShore" value="271">Tupperville</option>
+<option class="Yarmouth" value="195">Tusket</option>
+<option class="SouthShore" value="81">Union Square</option>
+<option class="SouthShore" value="826">Upper Branch</option>
+<option class="FundyShore" value="315">Upper Canard</option>
+<option class="FundyShore" value="255">Upper Clements</option>
+<option class="SouthShore" value="173">Upper Clyde River</option>
+<option class="FundyShore" value="396">Upper Economy</option>
+<option class="EasternShore" value="825">Upper Fox Island</option>
+<option class="FundyShore" value="272">Upper Granville</option>
+<option class="SouthShore" value="100">Upper LaHave</option>
+<option class="EasternShore" value="733">Upper Lakeville</option>
+<option class="CapeBretonIsland CeilidhTrail" value="546">Upper Margaree</option>
+<option class="EasternShore" value="716">Upper Musquodoboit</option>
+<option class="SouthShore" value="172">Upper Ohio</option>
+<option class="HalifaxMetro" value="11">Upper Sackville</option>
+<option class="FundyShore" value="375">Upper Stewiacke</option>
+<option class="SouthShore" value="44">Upper Tantallon</option>
+<option class="FundyShore" value="369">Urbania</option>
+<option class="CapeBretonIsland BrasDor" value="617">Valley Mills</option>
+<option class="FundyShore" value="341">Vaughan</option>
+<option class="FundyShore" value="267">Victoria Beach</option>
+<option class="CapeBretonIsland FleurDeLis" value="665">Victoria Bridge</option>
+<option class="FundyShore" value="298">Victoria Harbour</option>
+<option class="FundyShore" value="283">Victoria Vale</option>
+<option class="SouthShore" value="180">Villagedale</option>
+<option class="SouthShore" value="133">Vogler's Cove</option>
+<option class="CapeBretonIsland BrasDor" value="649">Wagmatcook</option>
+<option class="Northumberland" value="431">Wallace</option>
+<option class="FundyShore" value="360">Walton</option>
+<option class="EasternShore" value="748">Waternish</option>
+<option class="Northumberland" value="448">Waterside</option>
+<option class="FundyShore" value="307">Waterville</option>
+<option class="HalifaxMetro" value="8">Waverley</option>
+<option class="Yarmouth" value="198">Wedgeport</option>
+<option class="HalifaxMetro" value="5">Wellington</option>
+<option class="Northumberland" value="432">Wentworth</option>
+<option class="CapeBretonIsland FleurDeLis" value="655">West Arichat</option>
+<option class="CapeBretonIsland BrasDor" value="621">West Bay</option>
+<option class="SouthShore" value="137">West Berlin</option>
+<option class="Northumberland" value="444">West Branch</option>
+<option class="SouthShore" value="109">West Caledonia</option>
+<option class="EasternShore" value="706">West Chezzetcook</option>
+<option class="FundyShore" value="277">West Dalhousie</option>
+<option class="SouthShore" value="36">West Dover</option>
+<option class="SouthShore" value="162">West Green Harbour</option>
+<option class="EasternShore" value="722">West Jeddore</option>
+<option class="SouthShore" value="123">West LaHave</option>
+<option class="CapeBretonIsland CeilidhTrail" value="542">West Lake Ainslie</option>
+<option class="SouthShore" value="155">West Middle Sable</option>
+<option class="SouthShore" value="101">West Northfield</option>
+<option class="Yarmouth" value="188">West Pubnico</option>
+<option class="EasternShore" value="741">West Quoddy</option>
+<option class="Northumberland" value="459">West River</option>
+<option class="FundyShore" value="262">West Springhill</option>
+<option class="SouthShore" value="145">Western Head</option>
+<option class="SouthShore" value="67">Western Shore</option>
+<option class="HalifaxMetro" value="24">Westphal</option>
+<option class="FundyShore" value="242">Westport</option>
+<option class="Northumberland" value="463">Westville</option>
+<option class="FundyShore" value="227">Weymouth</option>
+<option class="FundyShore" value="228">Weymouth Mills</option>
+<option class="FundyShore" value="816">Weymouth North</option>
+<option class="FundyShore" value="236">Whale Cove</option>
+<option class="SouthShore" value="146">White Point (South Shore)</option>
+<option class="CapeBretonIsland CabotTrail" value="591">White Point (Cabot Trail)</option>
+<option class="SouthShore" value="29">White's Lake</option>
+<option class="EasternShore" value="763">Whitehead</option>
+<option class="CapeBretonIsland FleurDeLis" value="652">Whiteside</option>
+<option class="CapeBretonIsland BrasDor" value="650">Whycocomagh</option>
+<option class="SouthShore" value="117">Wileville</option>
+<option class="Northumberland" value="506">Williams Point</option>
+<option class="FundyShore" value="392">Williamsdale</option>
+<option class="FundyShore" value="284">Wilmot</option>
+<option class="EasternShore" value="745">Wilson's Cove</option>
+<option class="FundyShore" value="336">Windsor</option>
+<option class="HalifaxMetro" value="7">Windsor Junction</option>
+<option class="FundyShore" value="328">Wolfville</option>
+<option class="SouthShore" value="186">Woods Harbour</option>
+<option class="Yarmouth" value="211">Woodvale</option>
+<option class="FundyShore" value="304">Woodville</option>
+<option class="CapeBretonIsland CabotTrail" value="599">Wreck Cove</option>
+<option class="EasternShore" value="732">Wyse Corner</option>
+<option class="Yarmouth" value="200">Yarmouth</option>
+<option class="FundyShore" value="811">Young's Cove</option>

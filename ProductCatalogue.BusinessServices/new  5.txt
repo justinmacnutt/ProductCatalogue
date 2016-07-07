@@ -1,0 +1,42 @@
+<node>
+  <eventname>Justin's Event</eventname>
+  <additionalImages>http://nstapartnerportal.isl.ca/sites/default/files/photo%202%20%284%29.JPG, http://nstapartnerportal.isl.ca/sites/default/files/photo%20%286%29.JPG</additionalImages>
+  <price-high->$600.00</price-high->
+  <price-low->$50.00</price-low->
+  <conditions>2 drinks tickets with every admission</conditions>
+  <area>Digby Area</area>
+  <body>&lt;p&gt;iojas fja odfj asoijdf oasij dfoiasjd ofijas doifj asoifj asoij fosijf oaisj ofj saofj osaij f iojas fja odfj asoijdf oasij dfoiasjd ofijas doifj asoifj asoij fosijf oaisj ofj saofj osaij fiojas fja odfj asoijdf oasij dfoiasjd ofijas doifj asoifj asoij fosijf oaisj ofj saofj osaij fiojas fja odfj asoijdf oasij dfoiasjd ofijas doifj asoifj asoij fosijf oaisj ofj saofj osaij fiojas fja odfj asoijdf oasij dfoiasjd ofijas doifj asoifj asoij fosijf oaisj ofj saofj osaij fiojas fja odfj asoijdf oasij dfoiasjd ofijas doifj asoifj asoij fosijf oaisj ofj saofj osaij fiojas fja odfj asoijdf oasij dfoiasjd ofijas doifj asoifj asoij fosijf oaisj ofj saofj osaij fiojas fja odfj asoijdf oasij dfoiasjd ofijas doifj asoifj asoij fosijf oaisj ofj saofj osaij fiojas fja odfj asoijdf oasij dfoiasjd ofijas doifj asoifj asoij fosijf oaisj ofj saofj osaij fiojas fja odfj asoijdf oasij dfoiasjd ofijas doifj asoifj asoij fosijf oaisj ofj saofj osaij fiojas fja odfj asoijdf oasij dfoiasjd ofijas doifj asoifj asoij fosijf oaisj ofj saofj osaij fiojas fja odfj asoijdf oasij dfoiasjd ofijas doifj asoifj asoij fosijf oaisj ofj saofj osaij fiojas fja odfj asoijdf oasij dfoiasjd ofijas doifj asoifj asoij fosijf oaisj ofj saofj osaij fiojas fja odfj asoijdf oasij dfoiasjd ofijas doifj asoifj asoij fosijf oaisj ofj saofj osaij fiojas fja odfj asoijdf oasij dfoiasjd ofijas doifj asoifj asoij fosijf oaisj ofj saofj osaij fiojas fja odfj asoijdf oasij dfoiasjd ofijas doifj asoifj asoij fosijf oaisj ofj saofj osaij fiojas fja odfj asoijdf oasij dfoiasjd ofijas doifj asoifj asoij fosijf oaisj ofj saofj osaij fiojas fja odfj asoijdf oasij dfoiasjd ofijas doifj asoifj asoij fosijf oaisj ofj saofj osaij fiojas fja odfj asoijdf oasij dfoiasjd ofijas doifj asoifj asoij fosijf oaisj ofj saofj osaij fiojas fja odfj asoijdf oasij dfoiasjd ofijas doifj asoifj asoij fosijf oaisj ofj saofj osaij fiojas fja odfj asoijdf oasij dfoiasjd ofijas doifj asoifj asoij fosijf oaisj ofj saofj osaij fiojas fja odfj asoijdf oasij dfoiasjd ofijas doifj asoifj asoij fosijf oaisj ofj saofj osaij fiojas fja odfj asoijdf oasij dfoiasjd ofijas doifj asoifj asoij fosijf oaisj ofj saofj osaij fiojas fja odfj asoijdf oasij dfoiasjd ofijas doifj asoifj asoij fosijf oaisj ofj saofj osaij fiojas fja odfj asoijdf oasij dfoiasjd ofijas doifj asoifj asoij fosijf oaisj ofj saofj osaij fiojas fja odfj asoijdf oasij dfoiasjd ofijas doifj asoifj asoij fosijf oaisj ofj saofj osaij fiojas fja odfj asoijdf oasij dfoiasjd ofijas doifj asoifj asoij fosijf oaisj ofj saofj osaij fiojas fja odfj asoijdf oasij dfoiasjd ofijas doifj asoifj asoij fosijf oaisj ofj saofj osaij fiojas fja odfj asoijdf oasij dfoiasjd ofijas doifj asoifj asoij fosijf oaisj ofj saofj osaij fiojas fja odfj asoijdf oasij dfoiasjd ofijas doifj asoifj asoij fosijf oaisj ofj saofj osaij fiojas fja odfj asoijdf oasij dfoiasjd ofijas doifj asoifj asoij fosijf oaisj ofj saofj osaij fiojas fja odfj asoijdf oasij dfoiasjd ofijas doifj asoifj asoij fosijf oaisj ofj saofj osaij fiojas fja odfj asoijdf oasij dfoiasjd ofijas doifj asoifj asoij fosijf oaisj ofj saofj osaij fiojas fja odfj asoijdf oasij dfoiasjd ofijas doifj asoifj asoij fosijf oaisj ofj saofj osaij fiojas fja odfj asoijdf oasij dfoiasjd ofijas doifj asoifj asoij fosijf oaisj ofj saofj osaij fiojas fja odfj asoijdf oasij dfoiasjd ofijas doifj asoifj asoij fosijf oaisj ofj saofj osaij fiojas fja odfj asoijdf oasij dfoiasjd ofijas doifj asoifj asoij fosijf oaisj ofj saofj osaij fiojas fja odfj asoijdf oasij dfoiasjd ofijas doifj asoifj asoij fosijf oaisj ofj saofj osaij fiojas fja odfj asoijdf oasij dfoiasjd ofijas doifj asoifj asoij fosijf oaisj ofj saofj osaij fiojas fja odfj asoijdf oasij dfoiasjd ofijas doifj asoifj asoij fosijf oaisj ofj saofj osaij fiojas fja odfj asoijdf oasij dfoiasjd ofijas doifj asoifj asoij fosijf oaisj ofj saofj osaij fiojas fja odfj asoijdf oasij dfoiasjd ofijas doifj asoifj asoij fosijf oaisj ofj saofj osaij fiojas fja odfj asoijdf oasij dfoiasjd ofijas doifj asoifj asoij fosijf oaisj ofj saofj osaij fiojas fja odfj asoijdf oasij dfoiasjd ofijas doifj asoifj asoij fosijf oaisj ofj saofj osaij f&lt;/p&gt;
+</body>
+  <category>Arts/Antiques, Entertainment, Cars/Motorcycles, Community Events, Exhibitions, Food/Wine, Heritage, Meetings/Conventions, Outdoors/Sports</category>
+  <community>Digby</community>
+  <contactEmail>jmacnuttcontact@isl.ca</contactEmail>
+  <contactName>justin macnutt</contactName>
+  <dates>Repeats every 4 weeks   every Sunday and every Monday and every Tuesday and every Wednesday and every Thursday and every Friday and every Saturday  until Sat Nov 15 2014 . 04/12/2014 to 04/14/2014, 04/13/2014 to 04/15/2014, 04/14/2014 to 04/16/2014, 04/15/2014 to 04/17/2014, 04/16/2014 to 04/18/2014, 04/17/2014 to 04/19/2014, 04/18/2014 to 04/20/2014, 04/19/2014 to 04/21/2014, 05/11/2014 to 05/13/2014, 05/12/2014 to 05/14/2014, 05/13/2014 to 05/15/2014, 05/14/2014 to 05/16/2014, 05/15/2014 to 05/17/2014, 05/16/2014 to 05/18/2014, 05/17/2014 to 05/19/2014, 06/08/2014 to 06/10/2014, 06/09/2014 to 06/11/2014, 06/10/2014 to 06/12/2014, 06/11/2014 to 06/13/2014, 06/12/2014 to 06/14/2014, 06/13/2014 to 06/15/2014, 06/14/2014 to 06/16/2014, 07/06/2014 to 07/08/2014, 07/07/2014 to 07/09/2014, 07/08/2014 to 07/10/2014, 07/09/2014 to 07/11/2014, 07/10/2014 to 07/12/2014, 07/11/2014 to 07/13/2014, 07/12/2014 to 07/14/2014, 08/03/2014 to 08/05/2014, 08/04/2014 to 08/06/2014, 08/05/2014 to 08/07/2014, 08/06/2014 to 08/08/2014, 08/07/2014 to 08/09/2014, 08/08/2014 to 08/10/2014, 08/09/2014 to 08/11/2014, 08/31/2014 to 09/02/2014, 09/01/2014 to 09/03/2014, 09/02/2014 to 09/04/2014, 09/03/2014 to 09/05/2014, 09/04/2014 to 09/06/2014, 09/05/2014 to 09/07/2014, 09/06/2014 to 09/08/2014, 09/28/2014 to 09/30/2014, 09/29/2014 to 10/01/2014, 09/30/2014 to 10/02/2014, 10/01/2014 to 10/03/2014, 10/02/2014 to 10/04/2014, 10/03/2014 to 10/05/2014, 10/04/2014 to 10/06/2014, 10/26/2014 to 10/28/2014, 10/27/2014 to 10/29/2014, 10/28/2014 to 10/30/2014, 10/29/2014 to 10/31/2014, 10/30/2014 to 11/01/2014, 10/31/2014 to 11/02/2014, 11/01/2014 to 11/03/2014</dates>
+  <don-039-tMissEvent>Don't Miss Event</don-039-tMissEvent>
+  <email>jmacnutt@isl.ca</email>
+  <eventStartYear>1972-01-01 00:00:00</eventStartYear>
+  <logo></logo>
+  <phone>902-444-2222</phone>
+  <preferredContactMethod>Email</preferredContactMethod>
+  <primaryImage>http://nstapartnerportal.isl.ca/sites/default/files/photo%20%289%29_1.JPG</primaryImage>
+  <region>Fundy Shore &amp; Annapolis Valley</region>
+  <shortDescription>irresponsibly mixing a passion for cars and wine</shortDescription>
+  <toll-freePhone></toll-freePhone>
+  <websiteDisplayDates>2014-07-11 00:00:00</websiteDisplayDates>
+  <businessName>Justin's Bike n' Wine</businessName>
+  <contactPhone>902-333-3333</contactPhone>
+  <designation>Destination Halifax</designation>
+  <instagram></instagram>
+  <pinterest></pinterest>
+  <tripadvisor></tripadvisor>
+  <twitter></twitter>
+  <website>http://www.isl.ca</website>
+  <latitude>44.640763</latitude>
+  <longitude>-63.593434</longitude>
+  <postalCode>B3H 3S4</postalCode>
+  <street>1636 Walnut St.</street>
+  <nid>34</nid>
+  <listingId>1989</listingId>
+  <eventDates>04/12/2014, 04/13/2014, 04/14/2014, 04/15/2014, 04/16/2014, 04/17/2014, 04/18/2014, 04/19/2014, 05/11/2014, 05/12/2014, 05/13/2014, 05/14/2014, 05/15/2014, 05/16/2014, 05/17/2014, 06/08/2014, 06/09/2014, 06/10/2014, 06/11/2014, 06/12/2014, 06/13/2014, 06/14/2014, 07/06/2014, 07/07/2014, 07/08/2014, 07/09/2014, 07/10/2014, 07/11/2014, 07/12/2014, 08/03/2014, 08/04/2014, 08/05/2014, 08/06/2014, 08/07/2014, 08/08/2014, 08/09/2014, 08/31/2014, 09/01/2014, 09/02/2014, 09/03/2014, 09/04/2014, 09/05/2014, 09/06/2014, 09/28/2014, 09/29/2014, 09/30/2014, 10/01/2014, 10/02/2014, 10/03/2014, 10/04/2014, 10/26/2014, 10/27/2014, 10/28/2014, 10/29/2014, 10/30/2014, 10/31/2014, 11/01/2014</eventDates>
+  <video>https://www.youtube.com/watch?v=hWfm26WWsmU, https://www.youtube.com/watch?v=RV_kuLZyYro, https://www.youtube.com/watch?v=c83PpjMNPew</video>
+</node>

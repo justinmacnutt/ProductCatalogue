@@ -1,0 +1,43 @@
+<nodes>
+  <node>
+    <eventname>Justin's Event</eventname>
+    <additionalImages>&lt;img typeof="foaf:Image" src="http://nstapartnerportal.isl.ca/sites/default/files/photo%202%20%284%29.JPG" width="200" height="150" alt="" /&gt;, &lt;img typeof="foaf:Image" src="http://nstapartnerportal.isl.ca/sites/default/files/photo%20%286%29.JPG" width="200" height="150" alt="" /&gt;</additionalImages>
+    <admission-highRange->$600.00</admission-highRange->
+    <admission-lowRange->$50.00</admission-lowRange->
+    <admissionDetails>2 drinks tickets with every admission</admissionDetails>
+    <body>&lt;p&gt;iojas fja odfj asoijdf oasij dfoiasjd ofijas doifj asoifj asoij fosijf oaisj ofj saofj osaij f iojas fja odfj asoijdf oasij dfoiasjd ofijas doifj asoifj asoij fosijf oaisj ofj saofj osaij fiojas fja odfj asoijdf oasij dfoiasjd ofijas doifj asoifj asoij fosijf oaisj ofj saofj osaij fiojas fja odfj asoijdf oasij dfoiasjd ofijas doifj asoifj asoij fosijf oaisj ofj saofj osaij fiojas fja odfj asoijdf oasij dfoiasjd ofijas doifj asoifj asoij fosijf oaisj ofj saofj osaij fiojas fja odfj asoijdf oasij dfoiasjd ofijas doifj asoifj asoij fosijf oaisj ofj saofj osaij fiojas fja odfj asoijdf oasij dfoiasjd ofijas doifj asoifj asoij fosijf oaisj ofj saofj osaij fiojas fja odfj asoijdf oasij dfoiasjd ofijas doifj asoifj asoij fosijf oaisj ofj saofj osaij fiojas fja odfj asoijdf oasij dfoiasjd ofijas doifj asoifj asoij fosijf oaisj ofj saofj osaij fiojas fja odfj asoijdf oasij dfoiasjd ofijas doifj asoifj asoij fosijf oaisj ofj saofj osaij fiojas fja odfj asoijdf oasij dfoiasjd ofijas doifj asoifj asoij fosijf oaisj ofj saofj osaij fiojas fja odfj asoijdf oasij dfoiasjd ofijas doifj asoifj asoij fosijf oaisj ofj saofj osaij fiojas fja odfj asoijdf oasij dfoiasjd ofijas doifj asoifj asoij fosijf oaisj ofj saofj osaij fiojas fja odfj asoijdf oasij dfoiasjd ofijas doifj asoifj asoij fosijf oaisj ofj saofj osaij fiojas fja odfj asoijdf oasij dfoiasjd ofijas doifj asoifj asoij fosijf oaisj ofj saofj osaij fiojas fja odfj asoijdf oasij dfoiasjd ofijas doifj asoifj asoij fosijf oaisj ofj saofj osaij fiojas fja odfj asoijdf oasij dfoiasjd ofijas doifj asoifj asoij fosijf oaisj ofj saofj osaij fiojas fja odfj asoijdf oasij dfoiasjd ofijas doifj asoifj asoij fosijf oaisj ofj saofj osaij fiojas fja odfj asoijdf oasij dfoiasjd ofijas doifj asoifj asoij fosijf oaisj ofj saofj osaij fiojas fja odfj asoijdf oasij dfoiasjd ofijas doifj asoifj asoij fosijf oaisj ofj saofj osaij fiojas fja odfj asoijdf oasij dfoiasjd ofijas doifj asoifj asoij fosijf oaisj ofj saofj osaij fiojas fja odfj asoijdf oasij dfoiasjd ofijas doifj asoifj asoij fosijf oaisj ofj saofj osaij fiojas fja odfj asoijdf oasij dfoiasjd ofijas doifj asoifj asoij fosijf oaisj ofj saofj osaij fiojas fja odfj asoijdf oasij dfoiasjd ofijas doifj asoifj asoij fosijf oaisj ofj saofj osaij fiojas fja odfj asoijdf oasij dfoiasjd ofijas doifj asoifj asoij fosijf oaisj ofj saofj osaij fiojas fja odfj asoijdf oasij dfoiasjd ofijas doifj asoifj asoij fosijf oaisj ofj saofj osaij fiojas fja odfj asoijdf oasij dfoiasjd ofijas doifj asoifj asoij fosijf oaisj ofj saofj osaij fiojas fja odfj asoijdf oasij dfoiasjd ofijas doifj asoifj asoij fosijf oaisj ofj saofj osaij fiojas fja odfj asoijdf oasij dfoiasjd ofijas doifj asoifj asoij fosijf oaisj ofj saofj osaij fiojas fja odfj asoijdf oasij dfoiasjd ofijas doifj asoifj asoij fosijf oaisj ofj saofj osaij fiojas fja odfj asoijdf oasij dfoiasjd ofijas doifj asoifj asoij fosijf oaisj ofj saofj osaij fiojas fja odfj asoijdf oasij dfoiasjd ofijas doifj asoifj asoij fosijf oaisj ofj saofj osaij fiojas fja odfj asoijdf oasij dfoiasjd ofijas doifj asoifj asoij fosijf oaisj ofj saofj osaij fiojas fja odfj asoijdf oasij dfoiasjd ofijas doifj asoifj asoij fosijf oaisj ofj saofj osaij fiojas fja odfj asoijdf oasij dfoiasjd ofijas doifj asoifj asoij fosijf oaisj ofj saofj osaij fiojas fja odfj asoijdf oasij dfoiasjd ofijas doifj asoifj asoij fosijf oaisj ofj saofj osaij fiojas fja odfj asoijdf oasij dfoiasjd ofijas doifj asoifj asoij fosijf oaisj ofj saofj osaij fiojas fja odfj asoijdf oasij dfoiasjd ofijas doifj asoifj asoij fosijf oaisj ofj saofj osaij fiojas fja odfj asoijdf oasij dfoiasjd ofijas doifj asoifj asoij fosijf oaisj ofj saofj osaij fiojas fja odfj asoijdf oasij dfoiasjd ofijas doifj asoifj asoij fosijf oaisj ofj saofj osaij fiojas fja odfj asoijdf oasij dfoiasjd ofijas doifj asoifj asoij fosijf oaisj ofj saofj osaij fiojas fja odfj asoijdf oasij dfoiasjd ofijas doifj asoifj asoij fosijf oaisj ofj saofj osaij fiojas fja odfj asoijdf oasij dfoiasjd ofijas doifj asoifj asoij fosijf oaisj ofj saofj osaij fiojas fja odfj asoijdf oasij dfoiasjd ofijas doifj asoifj asoij fosijf oaisj ofj saofj osaij f&lt;/p&gt;
+</body>
+    <category>Arts/Antiques, Arts/Entertainment, Cars/Motorcycles, Community Events, Exhibitions, Food/Wine, Heritage, Meetings/Conventions, Outdoors/Sports</category>
+    <community>Digby</community>
+    <contactEmail>jmacnuttcontact@isl.ca</contactEmail>
+    <contactName>justin macnutt</contactName>
+    <dates>07/11/2014, 07/17/2014, 07/24/2014, 07/31/2014, 08/07/2014, 08/14/2014, 08/21/2014, 08/28/2014, 09/04/2014, 09/11/2014, 09/18/2014, 09/25/2014, 10/02/2014, 10/09/2014, 10/16/2014, 10/23/2014, 10/30/2014, 11/06/2014, 11/13/2014, 11/20/2014, 11/27/2014, 12/04/2014, 12/11/2014, 12/18/2014, 12/25/2014, 01/01/2015, 01/08/2015, 01/15/2015, 01/22/2015, 01/29/2015</dates>
+    <don-039-tMissEvent>Don't Miss Event</don-039-tMissEvent>
+    <email>jmacnutt@isl.ca</email>
+    <eventStartYear>1972-01-01 00:00:00</eventStartYear>
+    <logo></logo>
+    <phone>902-444-2222</phone>
+    <preferredContactMethod>Email</preferredContactMethod>
+    <primaryImage>http://nstapartnerportal.isl.ca/sites/default/files/photo%20%289%29_1.JPG</primaryImage>
+    <shortDescription>irresponsibly mixing a passion for cars and wine</shortDescription>
+    <toll-freePhone></toll-freePhone>
+    <video></video>
+    <video-Description></video-Description>
+    <video-ThumbnailPath>http://nstapartnerportal.isl.ca/</video-ThumbnailPath>
+    <video-VideoUrl></video-VideoUrl>
+    <websiteDisplayDates>2014-07-11 00:00:00</websiteDisplayDates>
+    <businessName>Justin's Bike n' Wine</businessName>
+    <contactPhone>902-333-3333</contactPhone>
+    <designation>Destination Halifax</designation>
+    <instagram></instagram>
+    <pinterest></pinterest>
+    <tripadvisor></tripadvisor>
+    <twitter></twitter>
+    <website>http://www.isl.ca</website>
+    <latitude>44.640763</latitude>
+    <longitude>-63.593434</longitude>
+    <postalCode>B3H 3S4</postalCode>
+    <street>1636 Walnut St.</street>
+    <nid>34</nid>
+  </node>
+</nodes>

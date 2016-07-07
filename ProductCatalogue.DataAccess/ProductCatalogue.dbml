@@ -1,0 +1,643 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="ProductCatalogue3" Class="TourismDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="ConnectionString" ConnectionString="Data Source=WIN-UFFK2H06NO6\sqlexpress;Initial Catalog=ProductCatalogue3;Integrated Security=True" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.AttributeGroupProductType" Member="AttributeGroupProductTypes">
+    <Type Name="AttributeGroupProductType">
+      <Column Name="attributeGroupId" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="productTypeId" Type="System.Byte" DbType="TinyInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="AttributeGroup_AttributeGroupProductType" Member="AttributeGroup" ThisKey="attributeGroupId" OtherKey="id" Type="AttributeGroup" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Attribute" Member="Attributes">
+    <Type Name="Attribute">
+      <Column Name="id" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="attributeName" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="attributeGroupId" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Association Name="Attribute_ProductAttribute" Member="ProductAttributes" ThisKey="id,attributeGroupId" OtherKey="attributeId,attributeGroupId" Type="ProductAttribute" />
+      <Association Name="AttributeGroup_Attribute" Member="AttributeGroup" ThisKey="attributeGroupId" OtherKey="id" Type="AttributeGroup" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.AttributeGroup" Member="AttributeGroups">
+    <Type Name="AttributeGroup">
+      <Column Name="id" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="attributeGroupName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Association Name="AttributeGroup_AttributeGroupProductType" Member="AttributeGroupProductTypes" ThisKey="id" OtherKey="attributeGroupId" Type="AttributeGroupProductType" />
+      <Association Name="AttributeGroup_Attribute" Member="Attributes" ThisKey="id" OtherKey="attributeGroupId" Type="Attribute" />
+      <Association Name="AttributeGroup_ProductAttribute" Member="ProductAttributes" ThisKey="id" OtherKey="attributeGroupId" Type="ProductAttribute" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Business" Member="Businesses">
+    <Type Name="Business">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="businessName" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="description" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="isDeleted" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="lastModifiedBy" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="lastModifiedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="Business_BusinessAddress" Member="BusinessAddresses" ThisKey="id" OtherKey="businessId" Type="BusinessAddress" />
+      <Association Name="Business_BusinessNote" Member="BusinessNotes" ThisKey="id" OtherKey="businessId" Type="BusinessNote" />
+      <Association Name="Business_Contact" Member="Contacts" ThisKey="id" OtherKey="businessId" Type="Contact" />
+    </Type>
+  </Table>
+  <Table Name="dbo.BusinessAddress" Member="BusinessAddresses">
+    <Type Name="BusinessAddress">
+      <Column Name="businessId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="addressId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="Business_BusinessAddress" Member="Business" ThisKey="businessId" OtherKey="id" Type="Business" IsForeignKey="true" />
+      <Association Name="Address_BusinessAddress" Member="Address" ThisKey="addressId" OtherKey="id" Type="Address" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.BusinessNote" Member="BusinessNotes">
+    <Type Name="BusinessNote">
+      <Column Name="businessId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="noteId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="Business_BusinessNote" Member="Business" ThisKey="businessId" OtherKey="id" Type="Business" IsForeignKey="true" />
+      <Association Name="Note_BusinessNote" Member="Note" ThisKey="noteId" OtherKey="id" Type="Note" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ContactAddress" Member="ContactAddresses">
+    <Type Name="ContactAddress">
+      <Column Name="contactId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="addressId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="Address_ContactAddress" Member="Address" ThisKey="addressId" OtherKey="id" Type="Address" IsForeignKey="true" />
+      <Association Name="Contact_ContactAddress" Member="Contact" ThisKey="contactId" OtherKey="id" Type="Contact" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ContactNote" Member="ContactNotes">
+    <Type Name="ContactNote">
+      <Column Name="contactId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="noteId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="Note_ContactNote" Member="Note" ThisKey="noteId" OtherKey="id" Type="Note" IsForeignKey="true" />
+      <Association Name="Contact_ContactNote" Member="Contact" ThisKey="contactId" OtherKey="id" Type="Contact" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ContactPhone" Member="ContactPhones">
+    <Type Name="ContactPhone">
+      <Column Name="contactId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="phoneId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="Phone_ContactPhone" Member="Phone" ThisKey="phoneId" OtherKey="id" Type="Phone" IsForeignKey="true" />
+      <Association Name="Contact_ContactPhone" Member="Contact" ThisKey="contactId" OtherKey="id" Type="Contact" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ContactProduct" Member="ContactProducts">
+    <Type Name="ContactProduct">
+      <Column Name="contactId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="productId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="contactTypeId" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Association Name="Contact_ContactProduct" Member="Contact" ThisKey="contactId" OtherKey="id" Type="Contact" IsForeignKey="true" />
+      <Association Name="Product_ContactProduct" Member="Product" ThisKey="productId" OtherKey="id" Type="Product" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Media" Member="Medias">
+    <Type Name="Media">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="originalFileName" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="fileExtension" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="productId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="mediaTypeId" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="mediaLanguageId" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="sortOrder" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="lastModifiedBy" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="lastModifiedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="Media_MediaTranslation" Member="MediaTranslations" ThisKey="id" OtherKey="mediaId" Type="MediaTranslation" />
+      <Association Name="Product_Media" Member="Product" ThisKey="productId" OtherKey="id" Type="Product" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MediaTranslation" Member="MediaTranslations">
+    <Type Name="MediaTranslation">
+      <Column Name="mediaId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="languageId" Type="System.String" DbType="Char(2) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="mediaTitle" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="caption" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Association Name="Media_MediaTranslation" Member="Media" ThisKey="mediaId" OtherKey="id" Type="Media" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Note" Member="Notes">
+    <Type Name="Note">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="noteBody" Type="System.String" DbType="VarChar(2000) NOT NULL" CanBeNull="false" />
+      <Column Name="creationDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="reminderDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="lastModifiedBy" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="lastModifiedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="Note_BusinessNote" Member="BusinessNotes" ThisKey="id" OtherKey="noteId" Type="BusinessNote" />
+      <Association Name="Note_ContactNote" Member="ContactNotes" ThisKey="id" OtherKey="noteId" Type="ContactNote" />
+      <Association Name="Note_ProductNote" Member="ProductNotes" ThisKey="id" OtherKey="noteId" Type="ProductNote" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Phone" Member="Phones">
+    <Type Name="Phone">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="phoneNumber" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="phoneTypeId" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="comment" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="lastModifiedBy" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="lastModifiedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="Phone_ContactPhone" Member="ContactPhones" ThisKey="id" OtherKey="phoneId" Type="ContactPhone" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PrintVersionTranslation" Member="PrintVersionTranslations">
+    <Type Name="PrintVersionTranslation">
+      <Column Name="productId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="languageId" Type="System.String" DbType="Char(2) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="rateDescription" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="dateDescription" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="printDescription" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="unitDescription" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="directions" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Association Name="Product_PrintVersionTranslation" Member="Product" ThisKey="productId" OtherKey="id" Type="Product" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ProductAttribute" Member="ProductAttributes">
+    <Type Name="ProductAttribute">
+      <Column Name="productId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="productTypeId" Type="System.Byte" DbType="TinyInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="attributeId" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="attributeGroupId" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="Attribute_ProductAttribute" Member="Attribute" ThisKey="attributeId,attributeGroupId" OtherKey="id,attributeGroupId" Type="Attribute" IsForeignKey="true" />
+      <Association Name="AttributeGroup_ProductAttribute" Member="AttributeGroup" ThisKey="attributeGroupId" OtherKey="id" Type="AttributeGroup" IsForeignKey="true" />
+      <Association Name="Product_ProductAttribute" Member="Product" ThisKey="productId,productTypeId" OtherKey="id,productTypeId" Type="Product" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ProductDescription" Member="ProductDescriptions">
+    <Type Name="ProductDescription">
+      <Column Name="productId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="languageId" Type="System.String" DbType="VarChar(2) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="descriptionTypeId" Type="System.Byte" DbType="TinyInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="description" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Association Name="ProductDescription_ProductDescription" Member="ProductDescription2" ThisKey="productId,languageId,descriptionTypeId" OtherKey="productId,languageId,descriptionTypeId" Type="ProductDescription" Cardinality="One" />
+      <Association Name="ProductDescription_ProductDescription" Member="ProductDescription1" ThisKey="productId,languageId,descriptionTypeId" OtherKey="productId,languageId,descriptionTypeId" Type="ProductDescription" IsForeignKey="true" />
+      <Association Name="Product_ProductDescription" Member="Product" ThisKey="productId" OtherKey="id" Type="Product" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ProductNote" Member="ProductNotes">
+    <Type Name="ProductNote">
+      <Column Name="productId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="noteId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="Note_ProductNote" Member="Note" ThisKey="noteId" OtherKey="id" Type="Note" IsForeignKey="true" />
+      <Association Name="Product_ProductNote" Member="Product" ThisKey="productId" OtherKey="id" Type="Product" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ProductPaymentType" Member="ProductPaymentTypes">
+    <Type Name="ProductPaymentType">
+      <Column Name="productId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="paymentTypeId" Type="System.Byte" DbType="TinyInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="Product_ProductPaymentType" Member="Product" ThisKey="productId" OtherKey="id" Type="Product" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ProductRegionOfOperation" Member="ProductRegionOfOperations">
+    <Type Name="ProductRegionOfOperation">
+      <Column Name="productId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="regionId" Type="System.Byte" DbType="TinyInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="refRegion_ProductRegionOfOperation" Member="refRegion" ThisKey="regionId" OtherKey="id" Type="refRegion" IsForeignKey="true" />
+      <Association Name="Product_ProductRegionOfOperation" Member="Product" ThisKey="productId" OtherKey="id" Type="Product" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ProductTranslation" Member="ProductTranslations">
+    <Type Name="ProductTranslation">
+      <Column Name="productId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="languageId" Type="System.String" DbType="Char(2) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="rateDescription" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="dateDescription" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="webDescription" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="keywords" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="directions" Type="System.String" DbType="NVarChar(2000)" CanBeNull="true" />
+      <Column Name="cancellationPolicy" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Association Name="Product_ProductTranslation" Member="Product" ThisKey="productId" OtherKey="id" Type="Product" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.refProvinceState" Member="refProvinceStates">
+    <Type Name="refProvinceState">
+      <Column Name="id" Type="System.String" DbType="Char(2) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="provinceStateName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="countryId" Type="System.String" DbType="Char(2)" CanBeNull="true" />
+      <Association Name="refProvinceState_Address" Member="Addresses" ThisKey="id" OtherKey="provinceStateId" Type="Address" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TranslationStatus" Member="TranslationStatus">
+    <Type Name="TranslationStatus">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="productId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="fieldId" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="secondaryId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="statusDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="refProductField_TranslationStatus" Member="refProductField" ThisKey="fieldId" OtherKey="id" Type="refProductField" IsForeignKey="true" />
+      <Association Name="Product_TranslationStatus" Member="Product" ThisKey="productId" OtherKey="id" Type="Product" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Url" Member="Urls">
+    <Type Name="Url">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="url" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="urlTypeId" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="productId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="distance" Type="System.Decimal" DbType="Decimal(6,1)" CanBeNull="true" />
+      <Column Name="lastModifiedBy" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="lastModifiedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="Url_UrlTranslation" Member="UrlTranslations" ThisKey="id" OtherKey="urlId" Type="UrlTranslation" />
+      <Association Name="Product_Url" Member="Product" ThisKey="productId" OtherKey="id" Type="Product" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.UrlTranslation" Member="UrlTranslations">
+    <Type Name="UrlTranslation">
+      <Column Name="urlId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="languageId" Type="System.String" DbType="Char(2) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="title" Type="System.String" DbType="NVarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="description" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Association Name="Url_UrlTranslation" Member="Url" ThisKey="urlId" OtherKey="id" Type="Url" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.UserProfile" Member="UserProfiles">
+    <Type Name="UserProfile">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="email" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="password" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="username" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="creationDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="UserProfile_UserProfileRole" Member="UserProfileRoles" ThisKey="id" OtherKey="profileId" Type="UserProfileRole" />
+    </Type>
+  </Table>
+  <Table Name="dbo.UserProfileRole" Member="UserProfileRoles">
+    <Type Name="UserProfileRole">
+      <Column Name="profileId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="roleId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="UserProfile_UserProfileRole" Member="UserProfile" ThisKey="profileId" OtherKey="id" Type="UserProfile" IsForeignKey="true" />
+      <Association Name="UserRole_UserProfileRole" Member="UserRole" ThisKey="roleId" OtherKey="id" Type="UserRole" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.UserRole" Member="UserRoles">
+    <Type Name="UserRole">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="roleName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="UserRole_UserProfileRole" Member="UserProfileRoles" ThisKey="id" OtherKey="roleId" Type="UserProfileRole" />
+    </Type>
+  </Table>
+  <Table Name="dbo.VersionHistory" Member="VersionHistories">
+    <Type Name="VersionHistory">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="productId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="secondaryId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="typeId" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="actionId" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="modifiedBy" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="modificationDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="versionXml" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ProductCaaRating" Member="ProductCaaRatings">
+    <Type Name="ProductCaaRating">
+      <Column Name="productId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="caaRatingTypeId" Type="System.Byte" DbType="TinyInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ratingValue" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Association Name="Product_ProductCaaRating" Member="Product" ThisKey="productId" OtherKey="id" Type="Product" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ProductCanadaSelectRating" Member="ProductCanadaSelectRatings">
+    <Type Name="ProductCanadaSelectRating">
+      <Column Name="productId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="canadaSelectRatingTypeId" Type="System.Byte" DbType="TinyInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ratingValue" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Association Name="Product_ProductCanadaSelectRating" Member="Product" ThisKey="productId" OtherKey="id" Type="Product" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.refProductField" Member="refProductFields">
+    <Type Name="refProductField">
+      <Column Name="id" Type="System.Byte" DbType="TinyInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="fieldName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="fieldTypeId" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Association Name="refProductField_TranslationStatus" Member="TranslationStatus" ThisKey="id" OtherKey="fieldId" Type="TranslationStatus" />
+    </Type>
+  </Table>
+  <Table Name="dbo.refGuideSection" Member="refGuideSections">
+    <Type Name="refGuideSection">
+      <Column Name="id" Type="System.Byte" DbType="TinyInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="guideSectionName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="productTypeId" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="guideSortOrder" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Association Name="refGuideSection_Product" Member="Products" ThisKey="id" OtherKey="primaryGuideSectionId" Type="Product" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Address" Member="Addresses">
+    <Type Name="Address">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="addressTypeId" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="line1" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="line2" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="line3" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="city" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="provinceStateId" Type="System.String" DbType="Char(2)" CanBeNull="true" />
+      <Column Name="otherRegion" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="countryId" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="postalCode" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="lastModifiedBy" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="lastModifiedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="Address_BusinessAddress" Member="BusinessAddresses" ThisKey="id" OtherKey="addressId" Type="BusinessAddress" />
+      <Association Name="Address_ContactAddress" Member="ContactAddresses" ThisKey="id" OtherKey="addressId" Type="ContactAddress" />
+      <Association Name="refProvinceState_Address" Member="refProvinceState" ThisKey="provinceStateId" OtherKey="id" Type="refProvinceState" IsForeignKey="true" />
+      <Association Name="refCountry_Address" Member="refCountry" ThisKey="countryId" OtherKey="id" Type="refCountry" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.refCountry" Member="refCountries">
+    <Type Name="refCountry">
+      <Column Name="id" Type="System.String" DbType="VarChar(2) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="countryName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Association Name="refCountry_Address" Member="Addresses" ThisKey="id" OtherKey="countryId" Type="Address" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PrintVersion" Member="PrintVersions">
+    <Type Name="PrintVersion">
+      <Column Name="productId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="periodOfOperationTypeId" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="openMonth" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="openDay" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="closeMonth" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="closeDay" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="lowRate" Type="System.Decimal" DbType="Decimal(10,2)" CanBeNull="true" />
+      <Column Name="highRate" Type="System.Decimal" DbType="Decimal(10,2)" CanBeNull="true" />
+      <Column Name="extraPersonRate" Type="System.Decimal" DbType="Decimal(10,2)" CanBeNull="true" />
+      <Column Name="rateTypeId" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="ratePeriodId" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="hasOffSeasonRates" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="hasOffSeasonDates" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="cancellationPolicyId" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="noTax" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="Product_PrintVersion" Member="Product" ThisKey="productId" OtherKey="id" Type="Product" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.FileMakerArchive" Member="FileMakerArchives">
+    <Type Name="FileMakerArchive">
+      <Column Name="fileMakerId" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="archiveTypeId" Type="System.Byte" DbType="TinyInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="archive" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.refSubRegion" Member="refSubRegions">
+    <Type Name="refSubRegion">
+      <Column Name="id" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="subRegionName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Association Name="refSubRegion_refCommunity" Member="refCommunities" ThisKey="id" OtherKey="subRegionId" Type="refCommunity" />
+      <Association Name="refSubRegion_Product" Member="Products" ThisKey="id" OtherKey="subRegionId" Type="Product" />
+    </Type>
+  </Table>
+  <Table Name="dbo.refRegion" Member="refRegions">
+    <Type Name="refRegion">
+      <Column Name="id" Type="System.Byte" DbType="TinyInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="regionName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="guideSortOrder" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Association Name="refRegion_ProductRegionOfOperation" Member="ProductRegionOfOperations" ThisKey="id" OtherKey="regionId" Type="ProductRegionOfOperation" />
+      <Association Name="refRegion_refCommunity" Member="refCommunities" ThisKey="id" OtherKey="regionId" Type="refCommunity" />
+    </Type>
+  </Table>
+  <Table Name="dbo.refCounty" Member="refCounties">
+    <Type Name="refCounty">
+      <Column Name="id" Type="System.Byte" DbType="TinyInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="countyName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="refCounty_refCommunity" Member="refCommunities" ThisKey="id" OtherKey="countyId" Type="refCommunity" />
+    </Type>
+  </Table>
+  <Table Name="dbo.refCommunity" Member="refCommunities">
+    <Type Name="refCommunity">
+      <Column Name="id" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="communityName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="regionId" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="subRegionId" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="countyId" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="guideIndex" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="guideSortOrder" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="interfaceName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="refCommunity_Product" Member="Products" ThisKey="id" OtherKey="communityId" Type="Product" />
+      <Association Name="refCounty_refCommunity" Member="refCounty" ThisKey="countyId" OtherKey="id" Type="refCounty" IsForeignKey="true" />
+      <Association Name="refRegion_refCommunity" Member="refRegion" ThisKey="regionId" OtherKey="id" Type="refRegion" IsForeignKey="true" />
+      <Association Name="refSubRegion_refCommunity" Member="refSubRegion" ThisKey="subRegionId" OtherKey="id" Type="refSubRegion" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ProductUnitNumber" Member="ProductUnitNumbers">
+    <Type Name="ProductUnitNumber">
+      <Column Name="productId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="unitTypeId" Type="System.Byte" DbType="TinyInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="units" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Product_ProductUnitNumber" Member="Product" ThisKey="productId" OtherKey="id" Type="Product" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Contact" Member="Contacts">
+    <Type Name="Contact">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="contactTypeId" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="firstName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="lastName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="jobTitle" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="email" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="comment" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="businessId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="fileMakerId" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="isPrimary" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="isDeleted" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="lastModifiedBy" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="lastModifiedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="Contact_ContactAddress" Member="ContactAddresses" ThisKey="id" OtherKey="contactId" Type="ContactAddress" />
+      <Association Name="Contact_ContactNote" Member="ContactNotes" ThisKey="id" OtherKey="contactId" Type="ContactNote" />
+      <Association Name="Contact_ContactPhone" Member="ContactPhones" ThisKey="id" OtherKey="contactId" Type="ContactPhone" />
+      <Association Name="Contact_ContactProduct" Member="ContactProducts" ThisKey="id" OtherKey="contactId" Type="ContactProduct" />
+      <Association Name="Business_Contact" Member="Business" ThisKey="businessId" OtherKey="id" Type="Business" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.OperationPeriod" Member="OperationPeriods">
+    <Type Name="OperationPeriod">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="productId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="openDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="closeDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="Product_OperationPeriod" Member="Product" ThisKey="productId" OtherKey="id" Type="Product" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ProductTag" Member="ProductTags">
+    <Type Name="ProductTag">
+      <Column Name="productId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="tagId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="Tag_ProductTag" Member="Tag" ThisKey="tagId" OtherKey="id" Type="Tag" IsForeignKey="true" />
+      <Association Name="Product_ProductTag" Member="Product" ThisKey="productId" OtherKey="id" Type="Product" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Tag" Member="Tags">
+    <Type Name="Tag">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="tagName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Association Name="Tag_ProductTag" Member="ProductTags" ThisKey="id" OtherKey="tagId" Type="ProductTag" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PromotionPeriod" Member="PromotionPeriods">
+    <Type Name="PromotionPeriod">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="productId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="startDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="endDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="Product_PromotionPeriod" Member="Product" ThisKey="productId" OtherKey="id" Type="Product" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Product" Member="Products">
+    <Type Name="Product">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="productTypeId" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="productName" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="line1" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="line2" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="line3" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="city" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="postalCode" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="communityId" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="subRegionId" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="latitude" Type="System.Decimal" DbType="Decimal(9,6)" CanBeNull="true" />
+      <Column Name="longitude" Type="System.Decimal" DbType="Decimal(9,6)" CanBeNull="true" />
+      <Column Name="proprietor" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="email" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="web" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="telephone" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="secondaryPhone" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="offSeasonPhone" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="fax" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="tollfree" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="tollfreeAreaId" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="reservationsOnly" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="isCheckinMember" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="checkInId" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="accessCanadaRating" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="lowRate" Type="System.Decimal" DbType="Decimal(10,2)" CanBeNull="true" />
+      <Column Name="highRate" Type="System.Decimal" DbType="Decimal(10,2)" CanBeNull="true" />
+      <Column Name="extraPersonRate" Type="System.Decimal" DbType="Decimal(10,2)" CanBeNull="true" />
+      <Column Name="periodOfOperationTypeId" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="rateTypeId" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="ratePeriodId" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="primaryGuideSectionId" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="openMonth" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="openDay" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="closeMonth" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="closeDay" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="hasOffSeasonRates" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="hasOffSeasonDates" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="noTax" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="cancellationPolicyId" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="fileMakerId" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="parkingSpaces" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="seatingCapacityInterior" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="seatingCapacityExterior" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="otherMemberships" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="licenseNumber" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="checkboxLabel" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="paymentReceived" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="paymentAmount" Type="System.Decimal" DbType="Decimal(10,2)" CanBeNull="true" />
+      <Column Name="attendance" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="confirmationDueDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ownershipTypeId" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="sustainabilityTypeId" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="capacityTypeId" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="listingQuality" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="isFeatured" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="isTicketed" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="isValid" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="isComplete" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="isActive" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="overrideErrors" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="isDeleted" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="lastModifiedBy" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="lastModifiedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="confirmationLastReceived" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="trailDistance" Type="System.Decimal" DbType="Decimal(5,1)" CanBeNull="true" />
+      <Column Name="trailDuration" Type="System.Decimal" DbType="Decimal(5,1)" CanBeNull="true" />
+      <Column Name="registryNumber" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Association Name="Product_ContactProduct" Member="ContactProducts" ThisKey="id" OtherKey="productId" Type="ContactProduct" />
+      <Association Name="Product_Media" Member="Medias" ThisKey="id" OtherKey="productId" Type="Media" />
+      <Association Name="Product_PrintVersionTranslation" Member="PrintVersionTranslations" ThisKey="id" OtherKey="productId" Type="PrintVersionTranslation" />
+      <Association Name="Product_ProductAttribute" Member="ProductAttributes" ThisKey="id,productTypeId" OtherKey="productId,productTypeId" Type="ProductAttribute" />
+      <Association Name="Product_ProductDescription" Member="ProductDescriptions" ThisKey="id" OtherKey="productId" Type="ProductDescription" />
+      <Association Name="Product_ProductNote" Member="ProductNotes" ThisKey="id" OtherKey="productId" Type="ProductNote" />
+      <Association Name="Product_ProductPaymentType" Member="ProductPaymentTypes" ThisKey="id" OtherKey="productId" Type="ProductPaymentType" />
+      <Association Name="Product_ProductRegionOfOperation" Member="ProductRegionOfOperations" ThisKey="id" OtherKey="productId" Type="ProductRegionOfOperation" />
+      <Association Name="Product_ProductTranslation" Member="ProductTranslations" ThisKey="id" OtherKey="productId" Type="ProductTranslation" />
+      <Association Name="Product_TranslationStatus" Member="TranslationStatus" ThisKey="id" OtherKey="productId" Type="TranslationStatus" />
+      <Association Name="Product_Url" Member="Urls" ThisKey="id" OtherKey="productId" Type="Url" />
+      <Association Name="Product_ProductCaaRating" Member="ProductCaaRatings" ThisKey="id" OtherKey="productId" Type="ProductCaaRating" />
+      <Association Name="Product_ProductCanadaSelectRating" Member="ProductCanadaSelectRatings" ThisKey="id" OtherKey="productId" Type="ProductCanadaSelectRating" />
+      <Association Name="Product_PrintVersion" Member="PrintVersion" ThisKey="id" OtherKey="productId" Type="PrintVersion" Cardinality="One" />
+      <Association Name="Product_ProductUnitNumber" Member="ProductUnitNumbers" ThisKey="id" OtherKey="productId" Type="ProductUnitNumber" />
+      <Association Name="Product_OperationPeriod" Member="OperationPeriods" ThisKey="id" OtherKey="productId" Type="OperationPeriod" />
+      <Association Name="Product_ProductTag" Member="ProductTags" ThisKey="id" OtherKey="productId" Type="ProductTag" />
+      <Association Name="Product_PromotionPeriod" Member="PromotionPeriods" ThisKey="id" OtherKey="productId" Type="PromotionPeriod" />
+      <Association Name="refCommunity_Product" Member="refCommunity" ThisKey="communityId" OtherKey="id" Type="refCommunity" IsForeignKey="true" />
+      <Association Name="refGuideSection_Product" Member="refGuideSection" ThisKey="primaryGuideSectionId" OtherKey="id" Type="refGuideSection" IsForeignKey="true" />
+      <Association Name="refSubRegion_Product" Member="refSubRegion" ThisKey="subRegionId" OtherKey="id" Type="refSubRegion" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.SearchBusinesses" Method="SearchBusinesses">
+    <Parameter Name="businessId" Type="System.Int32" DbType="Int" />
+    <Parameter Name="businessName" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="communityName" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="filterLetter" Type="System.String" DbType="VarChar(1)" />
+    <ElementType Name="SearchBusinessesResult">
+      <Column Name="businessId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="businessName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="contactId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="contactFirstName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="contactLastName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="phoneNumber" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="email" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.GetBusinessNames" Method="GetBusinessNames">
+    <Parameter Name="string" Type="System.String" DbType="VarChar(50)" />
+    <ElementType Name="GetBusinessNamesResult">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="businessName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SearchProducts" Method="SearchProducts">
+    <Parameter Name="productId" Type="System.Int32" DbType="Int" />
+    <Parameter Name="productName" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="productTypeId" Type="System.Byte" DbType="TinyInt" />
+    <Parameter Name="communityId" Type="System.Int16" DbType="SmallInt" />
+    <Parameter Name="regionId" Type="System.Byte" DbType="TinyInt" />
+    <Parameter Name="checkInId" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="fileMakerId" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="licenseNumber" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="businessName" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="contactFirstName" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="contactLastName" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="filterLetter" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="isActive" Type="System.Byte" DbType="TinyInt" />
+    <Parameter Name="isValid" Type="System.Byte" DbType="TinyInt" />
+    <Parameter Name="overrideErrors" Type="System.Byte" DbType="TinyInt" />
+    <ElementType Name="SearchProductsResult">
+      <Column Name="productId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="productName" Type="System.String" DbType="NVarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="productTypeId" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="communityName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="regionName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="contactId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="firstName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="lastName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="businessId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="businessName" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="isActive" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="isValid" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="overrideErrors" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SearchContacts" Method="SearchContacts">
+    <Parameter Name="contactId" Type="System.Int32" DbType="Int" />
+    <Parameter Name="firstName" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="lastName" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="telephone" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="email" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="businessName" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="communityName" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="filterLetter" Type="System.String" DbType="VarChar(1)" />
+    <ElementType Name="SearchContactsResult">
+      <Column Name="contactId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="firstName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="lastName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="contactTypeId" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="isPrimary" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="phoneNumber" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="email" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="jobTitle" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+</Database>

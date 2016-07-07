@@ -1,0 +1,104 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="prodCat.Master.cs" Inherits="WebApplication.prodCat" %>
+<%@ Register TagPrefix="uc" TagName="AuthWidget" Src="~/UserControls/AuthWidget.ascx" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+<head id="Head1" runat="server">  
+    <title>Product Catalogue</title>
+    <link href="Styles/prodCat.css" rel="stylesheet" type="text/css" />
+    <link href="Styles/research.css" rel="stylesheet" type="text/css" />
+    <link href="Styles/jquery.wysiwyg.css" rel="stylesheet" type="text/css" />
+    
+	<script type="text/javascript" src="../../Scripts/jquery-1.6.2.min.js"></script>
+    <script type="text/javascript" src="../../Scripts/jquery-ui-1.8.16.custom.min.js"></script>
+    <script type="text/javascript" src="../../Scripts/jquery.maxlength.js"></script>
+	<script type="text/javascript" src="../../Scripts/jquery.supersleight.js"></script>
+    <asp:ContentPlaceHolder id="cphHeadContent" runat="server"> </asp:ContentPlaceHolder>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            //$("#content_wrap,.masthead_logo,.tourism_logo,.main_nav").supersleight();
+            $(".mega").hover(
+	            function () {
+	                $(this).addClass("hovering");
+	            },
+	            function () {
+	                $(this).removeClass("hovering");
+	            }
+            );
+	        $('.mnTab').click(function (e) {
+                e.preventDefault();
+            });
+        });
+    </script>
+</head> 
+<body>  
+<form id="form1" runat="server">
+	<div id="main_wrap" class="clearfix">
+		<div id="body_wrap" class="clearfix">
+			<div id="masthead" class="clearfix">
+				<div class="masthead_top clearfix">
+					<div class="tourism_logo"><a href="http://novascotia.com">Nova Scotia Tourism</a></div>
+					<div class="masthead_logo">Product Catalogue</div>
+				</div>
+				<div class="masthead_nav">
+					<div class="task_nav clearfix">
+                        <uc:AuthWidget runat="server" ID="ucAuthWidget" />
+					</div>
+                    <div class="main_nav clearfix">
+						<ul class="clearfix">
+							<li class="first mega"><a id="mn_data" class="mnTab" href="#" runat="server"><span class="mn_tab">Data</span></a>
+                                <div class="menu clearfix">
+                                    <ul>
+                                        <li class="clearfix"><a href="~/Admin/Research/BulkEdit.aspx" runat="server"><span>Bulk Edit Accommodation</span></a></li>
+                                        <li class="clearfix"><a href="~/Admin/Research/BulkEditCampground.aspx" runat="server"><span>Bulk Edit Campground</span></a></li>
+                                        <li class="clearfix"><a href="~/Admin/Research/Index.aspx" runat="server"><span>Search</span></a></li>
+                                    </ul>
+                                </div>
+                            </li>
+							<li class="mega"><a id="mn_acc_reports" class="mnTab" href="#" runat="server"><span class="mn_tab">Accommodations Reports</span></a>
+                                <div class="menu clearfix">
+                                    <ul>
+                                        <li class="clearfix"><a href="~/Admin/Research/AccOccupancyByProduct.aspx" runat="server"><span>Occupancy by License Number</span></a></li>
+                                        <li class="clearfix"><a href="~/Admin/Research/AccOccupancyByGeography.aspx" runat="server"><span>Occupancy by Geography</span></a></li>
+                                        <li class="clearfix"><a href="~/Admin/Research/NonReporting.aspx" runat="server"><span>Non Reporting</span></a></li>
+                                        <li class="clearfix"><a href="~/Admin/Research/Confidential.aspx" runat="server"><span>Confidential</span></a></li>
+                                        <li class="clearfix"><a href="~/Admin/Research/Variance.aspx" runat="server"><span>Variance</span></a></li>
+                                    </ul>
+                                </div>
+                            </li>
+							<li class="last mega"><a id="mn_camp_reports" class="mnTab" href="#" runat="server"><span class="mn_tab">Campground Reports</span></a>
+                                <div class="menu clearfix">
+                                    <ul>
+                                        <li class="clearfix"><a id="A1" href="~/Admin/Research/CampOccupancyByProduct.aspx" runat="server"><span>Occupancy by License Number</span></a></li>
+                                        <li class="clearfix"><a id="A2" href="~/Admin/Research/CampOccupancyByGeography.aspx" runat="server"><span>Occupancy by Geography</span></a></li>
+                                        <li class="clearfix"><a id="A3" href="~/Admin/Research/CampNonReporting.aspx" runat="server"><span>Non Reporting</span></a></li>
+                                        <li class="clearfix"><a id="A4" href="~/Admin/Research/CampConfidential.aspx" runat="server"><span>Confidential</span></a></li>
+                                        <li class="clearfix"><a id="A5" href="~/Admin/Research/CampVariance.aspx" runat="server"><span>Variance</span></a></li>
+                                    </ul>
+                                </div>
+                            </li>
+						</ul>
+					</div>
+				</div>
+			</div>
+	
+			<div id="content_wrap" class="clearfix">
+				<div class="content clearfix">
+					<asp:ContentPlaceHolder id="cphMainContent" runat="server"></asp:ContentPlaceHolder>
+				</div>
+			</div><!-- /end content_wrap -->
+	
+		</div><!-- /end body_wrap -->
+	
+		<div id="footer_wrap" class="clearfix">
+			<div id="footer" class="clearfix">
+				<div class="footer_right"></div>
+				<div class="footer_left"></div>
+			</div>
+		</div><!-- /end footer_wrap -->
+	
+	</div><!-- /end main_wrap -->
+</form>
+</body> 
+</html> 

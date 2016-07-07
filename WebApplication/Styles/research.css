@@ -1,0 +1,135 @@
+﻿/* override css from prodCar.css */
+body { background-color:#fff;  }
+
+/* ==== STRUCTURAL ELEMENTS ===================== */
+#main_wrap  {
+    display:block; margin:0; padding:0; width:100%; min-height:auto; height:100%;
+    background-image:none;
+}
+
+#masthead { width:100%; padding:8px 0 20px;  margin:0 auto;
+background: #28343b; /* Old browsers */
+background: -moz-linear-gradient(top,  #28343b 0%, #828c95 64%, #b5bdc8 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#28343b), color-stop(64%,#828c95), color-stop(100%,#b5bdc8)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #28343b 0%,#828c95 64%,#b5bdc8 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #28343b 0%,#828c95 64%,#b5bdc8 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #28343b 0%,#828c95 64%,#b5bdc8 100%); /* IE10+ */
+background: linear-gradient(top,  #28343b 0%,#828c95 64%,#b5bdc8 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#28343b', endColorstr='#b5bdc8',GradientType=0 ); /* IE6-9 */
+}
+
+#body_wrap {width:100%; margin:0 auto; padding:0; }
+#content_wrap  
+{
+ color:#565656; 
+ font-size:1.2em;
+ width:auto;
+ margin:0 auto;
+ background-color:#fff;
+ background-image:none; 
+-moz-border-radius:0; 
+-webkit-border-radius:0;
+-border-radius:0;
+}
+#footer_wrap { display:none;  }
+
+/* masthead */
+.masthead_top          { display:block; width:960px; height:62px; margin:0 auto; padding:0; }
+.masthead_logo         { display:inline; float:left; width:280px; height:42px; background:transparent url(../Images/pc_main_logo.png) 0 0 no-repeat; }
+.tourism_logo          { display:inline; float:right; margin-top:16px; width:144px; height:22px; background:transparent url(../Images/pc_ns_logo.png) 0 0 no-repeat; }
+.tourism_logo a        { display:block; width:100%; height:100%; }
+
+.masthead_nav          { display:block; width:960px; margin:0 auto; }
+.task_nav              { display:inline; float:right; width:250px; text-align:right; line-height:16px; color:#fff; line-height:44px; }
+.task_nav a:link,
+.task_nav a:visited,
+.task_nav a:hover,
+.task_nav a:active     { color:#fff; font-size:1.1em; }
+.task_nav ul li        { display:inline; border-left:solid 1px #fff; padding:0 8px; }
+.task_nav ul li.first  { border-left:0; padding-left:0; }
+.task_nav ul li.last   { padding-right:0; }
+
+
+
+
+/* main nav */
+.main_nav { height:auto; padding:0; }
+
+.main_nav ul li,
+.main_nav ul li a,
+.main_nav ul li a span.mn_tab { background-image:none; }
+
+.main_nav ul           {  }
+.main_nav ul li        { display:inline; float:left; line-height:45px; margin:0 3px; padding:0 0 0 0; background-position:inherit; font-size:1.6em; font-family:Tahoma, Arial, Verdana, sans-serif; }
+.main_nav ul li span   { display:block; float:left; }
+.main_nav ul li.first  { margin-left:0; border-left:0; }
+.main_nav ul li.first a{ }
+.main_nav ul li.last   { background-image:none; padding:0; }
+.main_nav ul li a      { display:block; float:left; padding:0 12px; line-height:35px; text-transform:uppercase; background-color:#dadada; -moz-border-radius: 8px; -webkit-border-radius: 8px; border-radius: 8px; }
+.main_nav ul li a span.mn_tab { display:inline; float:none; margin:0 0 0 0; padding:0 0 0 0; line-height:inherit; }
+
+.main_nav ul li a:link { text-decoration:none; color:#fafafa; }
+.main_nav ul li a:visited { text-decoration:none; color:#fafafa; }
+.main_nav ul li.hovering a  
+{
+    -moz-border-radius-bottomleft:0; 
+    -moz-border-radius-bottomright:0; 
+    -webkit-border-bottom-left-radius:0;
+    -webkit-border-bottom-right-radius:0;
+    -border-bottom-left-radius:0;
+    -border-bottom-right-radius:0;
+}
+.main_nav ul li.hovering a,
+.main_nav ul li.hovering a span.mn_tab { text-decoration:none; color:#444; background-position:inherit; background-color:#f0f0f0; }
+
+
+.main_nav ul li a.current,
+.main_nav ul li a.current span.mn_tab,
+.main_nav ul li.hovering a.current,
+.main_nav ul li.hovering a.current span.mn_tab { text-decoration:none; color:#444; background-position:inherit; background-color:#fafafa; ; }
+
+.main_nav ul li a:active { text-decoration:none; color:#cde2d5; }
+
+
+/* menu */
+li.mega              { position:relative; }
+.menu                { display:none; position:absolute; top:33px; left:-1px; z-index:9000; }
+li.first .menu       { left:-1px; }
+.hovering .menu      { display:block; }
+.main_nav ul li .menu ul            { list-style-type:none; width:99.9%; margin:0; padding:0; }
+.main_nav ul li .menu ul li         { width:100%; list-style-type:none; margin:0 !important; padding:0 !important; line-height:0;  }
+.main_nav ul li .menu ul li a       { display:block; width:100%; margin:0; padding:0; line-height:30px; text-decoration:none; text-transform:capitalize; color:#444; background-color:#f0f0f0; font-size:12px; border:1px solid #888; border-top:0; background-image:none; -moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0;  }
+.main_nav ul li .menu ul li a span  { display:block; float:none; width:100%; margin:0; padding:0 8px; border-top:0; }
+.main_nav ul li .menu ul li a:hover { color:#444; background-color:#e5e5e5; }
+
+/* tabs */
+.form_tabs {width:920px; margin:0 auto 40px;}
+
+
+
+/* body */
+.content { padding:1em 1em 2em; }
+
+table.tbl_data td,
+table.tbl_data_notes td {border-top:0;border-bottom:1px dotted #dedede;}
+tr.tbl_preHeader td {border-bottom:0;}
+tr.tbl_preHeader td.headerGroup strong { display:block; width:100%; font-size:0.8em; text-align:center; }
+tr.tbl_preHeader td.headerGroup div    { display:block; width:100%; height:5px; border:1px solid #dadada; border-bottom:0; }
+
+tr.tbl_header td { vertical-align:bottom;}
+
+.form_wrap { width:100%;}
+.submit_btn_bar {padding:12px;background: #f0f0f0;}
+.search_btn_bar  { width:920px; margin:1em auto 2em;}
+.update_btn_bar {background-color:#fff;}
+
+table.researchProdInfo {display:table; width:920px; margin:3em auto 0; border-collapse:collapse;}
+table.researchProdInfo td {padding:10px; vertical-align:top; border:1px solid #dadada;}
+table.researchProdInfo td.form_label {border-bottom:0;}
+table.researchProdInfo td.form_input {vertical-align:middle; padding-top:0; border-top:0;}
+
+.pager_nav {margin-top:1em;border:0;}
+
+
+
+
