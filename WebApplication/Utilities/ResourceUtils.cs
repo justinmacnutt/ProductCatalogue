@@ -224,6 +224,8 @@ namespace WebApplication.Utilities
                     return "Golf";
                 case ((int)Activity.Hiking):
                     return "Hiking";
+                case ((int)Activity.MountainBiking):
+                    return "Mountain biking";
                 case ((int)Activity.Kayaking):
                     return "Kayaking";
                 case ((int)Activity.Kitesurfing):
@@ -594,7 +596,7 @@ namespace WebApplication.Utilities
                 case ((int)ProductCategory.NonProfitArtGallery):
                     return "Art gallery (non-profit)";
                 case ((int)ProductCategory.NoveltyGolfCourse):
-                    return "Novelty golf course";
+                    return "Novelty activity";
                 case ((int)ProductCategory.Park):
                     return "Park";
                 case ((int)ProductCategory.SailingCharter):
@@ -882,7 +884,7 @@ namespace WebApplication.Utilities
                 case (GuideSectionOutdoors.NationalParks):
                     return "National parks";
                 case (GuideSectionOutdoors.NoveltyGolf):
-                    return "Novelty golf";
+                    return "Novelty activities";
                 //case (GuideSectionOutdoors.Outdoor):
                 //    return "Outdoor adventure tours";
                 case (GuideSectionOutdoors.Photography):
@@ -1243,6 +1245,8 @@ namespace WebApplication.Utilities
                     return "Cuisine";
                 case (AttributeGroup.CulturalHeritage):
                     return "Cultural heritage";
+                case (AttributeGroup.EatAndDrinkType):
+                    return "Eat & Drink type";
                 case (AttributeGroup.EditorChecks):
                     return "Editor check";
                 case (AttributeGroup.ExhibitType):
@@ -1337,6 +1341,8 @@ namespace WebApplication.Utilities
                     return "Attraction";
                 case (ProductType.Campground):
                     return "Campground";
+                case (ProductType.EatAndDrink):
+                    return "Eat & Drink";
                 case (ProductType.FineArts):
                     return "Fine arts";
                 case (ProductType.Outdoors):
@@ -1654,6 +1660,29 @@ namespace WebApplication.Utilities
             }
         }
 
+        public static string GetEatAndDrinkTypeLabel(EatAndDrinkType t)
+        {
+            switch (t)
+            {
+                case (EatAndDrinkType.Brewery):
+                    return "Brewery";
+                case (EatAndDrinkType.BrewPub):
+                    return "Brew Pub";
+                case (EatAndDrinkType.Cidery):
+                    return "Cidery";
+                case (EatAndDrinkType.Distillery):
+                    return "Distillery";
+                case (EatAndDrinkType.SpecialtyFood):
+                    return "Specialty Food";
+                case (EatAndDrinkType.TasteOfNsRestaurant):
+                    return "Taste of NS Restaurant";
+                case (EatAndDrinkType.Winery):
+                    return "Winery";
+                default:
+                    return "ERROR";
+            }
+        }
+
         public static string GetFeatureLabel(Feature f)
         {
             switch (f)
@@ -1857,7 +1886,7 @@ namespace WebApplication.Utilities
                 case (ProductCategory.NonProfitArtGallery):
                     return "Non profit art gallery";
                 case (ProductCategory.NoveltyGolfCourse):
-                    return "Novelty golf course";
+                    return "Novelty activity";
                 case (ProductCategory.Park):
                     return "Park";
                 case (ProductCategory.SailingCharter):
@@ -2129,6 +2158,21 @@ namespace WebApplication.Utilities
                     return "Web keywords";
                 case (ProductField.WebRateDescription):
                     return "Web rate details";
+                default:
+                    return "ERROR";
+            }
+        }
+
+        public static string GetTasteOfNsTypeLabel(TasteOfNsType t)
+        {
+            switch (t)
+            {
+                case (TasteOfNsType.CasualDining):
+                    return "Chef-inspired Casual Dining";
+                case (TasteOfNsType.FineDining):
+                    return "Chef-inspired Fine Dining";
+                case (TasteOfNsType.EssenceOfNs):
+                    return "Essence of Nova Scotia";
                 default:
                     return "ERROR";
             }

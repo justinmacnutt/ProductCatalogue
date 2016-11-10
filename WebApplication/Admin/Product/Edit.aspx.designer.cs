@@ -2911,6 +2911,69 @@ namespace WebApplication.Admin.Product {
         protected global::System.Web.UI.WebControls.CheckBox cbAtt10_454;
         
         /// <summary>
+        /// cbAtt35_1700 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox cbAtt35_1700;
+        
+        /// <summary>
+        /// cbAtt35_1701 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox cbAtt35_1701;
+        
+        /// <summary>
+        /// cbAtt35_1702 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox cbAtt35_1702;
+        
+        /// <summary>
+        /// cbAtt35_1703 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox cbAtt35_1703;
+        
+        /// <summary>
+        /// cbAtt35_1704 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox cbAtt35_1704;
+        
+        /// <summary>
+        /// cbAtt35_1705 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox cbAtt35_1705;
+        
+        /// <summary>
+        /// cbAtt35_1706 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox cbAtt35_1706;
+        
+        /// <summary>
         /// cbAtt11_501 control.
         /// </summary>
         /// <remarks>
@@ -3107,6 +3170,15 @@ namespace WebApplication.Admin.Product {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CheckBox cbAtt11_514;
+        
+        /// <summary>
+        /// cbAtt11_526 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox cbAtt11_526;
         
         /// <summary>
         /// cbAtt11_513 control.
@@ -3368,6 +3440,15 @@ namespace WebApplication.Admin.Product {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CheckBox cbAtt15_711;
+        
+        /// <summary>
+        /// cbAtt15_713 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox cbAtt15_713;
         
         /// <summary>
         /// tbOtherMemberships control.

@@ -28,6 +28,7 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -125,6 +126,7 @@
     <Content Include="Images\pdfForms\accom_confirmation_form_letter.jpg" />
     <Content Include="Images\view_toggle.gif" />
     <Content Include="index.html" />
+    <Content Include="Justin.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="MediaMigrate.aspx" />
     <Content Include="Scripts\date.js" />
@@ -473,6 +475,13 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Interface.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Justin.aspx.cs">
+      <DependentUpon>Justin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Justin.aspx.designer.cs">
+      <DependentUpon>Justin.aspx</DependentUpon>
     </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>

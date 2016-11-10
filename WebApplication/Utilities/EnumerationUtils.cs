@@ -613,6 +613,7 @@ namespace WebApplication.Utilities
             l.Add(new ListItem("Accommodation",((int) ProductType.Accommodation).ToString()));
             l.Add(new ListItem("Attraction", ((int)ProductType.Attraction).ToString()));
             l.Add(new ListItem("Campground", ((int)ProductType.Campground).ToString()));
+            l.Add(new ListItem("Eat & Drink", ((int)ProductType.EatAndDrink).ToString()));
             l.Add(new ListItem("Fine arts", ((int)ProductType.FineArts).ToString()));
             l.Add(new ListItem("Outdoors", ((int)ProductType.Outdoors).ToString()));
             l.Add(new ListItem("Restaurant", ((int)ProductType.Restaurants).ToString()));
@@ -647,6 +648,8 @@ namespace WebApplication.Utilities
                     return ResourceUtils.GetCoreExperienceLabel((CoreExperience)attributeId);
                 case (AttributeGroup.CulturalHeritage):
                     return ResourceUtils.GetCulturalHeritageLabel((CulturalHeritage)attributeId);
+                case (AttributeGroup.EatAndDrinkType):
+                    return ResourceUtils.GetEatAndDrinkTypeLabel((EatAndDrinkType)attributeId);
                 case (AttributeGroup.Feature):
                     return ResourceUtils.GetFeatureLabel((Feature)attributeId);
                 case (AttributeGroup.GovernmentLevel):
@@ -665,6 +668,8 @@ namespace WebApplication.Utilities
                     return ResourceUtils.GetRestaurantServiceLabel((RestaurantService)attributeId);
                 case (AttributeGroup.ShareInformationWith):
                     return ResourceUtils.GetShareInformationWithLabel((ShareInformationWith)attributeId);
+                case (AttributeGroup.TasteOfNsType):
+                    return ResourceUtils.GetTasteOfNsTypeLabel((TasteOfNsType)attributeId);
                 //case (AttributeGroup.SmokingPolicy):
                 //    return ResourceUtils.GetSmokingPolicyLabel((SmokingPolicy)attributeId);
                 default:

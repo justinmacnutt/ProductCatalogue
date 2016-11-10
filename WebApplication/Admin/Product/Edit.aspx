@@ -742,6 +742,49 @@
                     $("[id*=dvCellService]").show();
 
                     break;
+
+                //Eat & Drink   
+                case "14":
+                    $("[id*=dvAreaOfInterest]").hide();
+                    $("[id*=dvActivity]").hide();
+                    $("[id*=dvProductCategory]").hide();
+                    $("[id*=dvCulturalHeritage]").hide();
+                    $("[id*=dvCoreExperience]").hide();
+
+                    $("[id*=dvAccessAdvisor]").show();
+                    $("[id*=dvWebRateDescriptionGroup]").show();
+                    $("[id*=dvPrintRateDescriptionGroup]").show();
+                    $("[id*=dvParkingSpaces]").show();
+                    $("[id*=dvEatAndDrinkType]").show();
+                    $("[id*=dvRestaurantService]").show();
+                    $("[id*=dvRestaurantType]").show();
+                    $("[id*=dvRestaurantSpecialty]").show();
+
+                    //Print Guide 
+                    //Features
+                    //$("#pg_bien").show();
+                    $("#pg_bus_tour").show();
+                    $("#pg_gift_shop").show();
+                    $("#pg_internet").show();
+                    $("#pg_limited").show();
+                    $("#pg_picnic").show();
+                    $("#pg_restaurant").show();
+                    //                    $("#pg_smoking").show();
+                    $("#pg_takeout").show();
+                    $("#pg_tea_room").show();
+                    $("#pg_wheelchair").show();
+                    //Product category
+                    $("#pg_museum").show();
+                    $("#pg_park").show();
+                    $("#pg_winery").show();
+                    //Area of Interest
+                    $("#pg_geneal").show();
+                    $("#pg_fossils").show();
+                    //Memberships
+                    $("#pg_tasteNS").show();
+
+                    break;
+
             }
         }
 
@@ -3656,6 +3699,20 @@
                                 <div class="checkboxItem"><asp:CheckBox ID="cbAtt10_454" runat="server" Text="Mi'kmaq" /></div>
                             </div>
                         </div>
+
+                        <div id="dvEatAndDrinkType" style="display:none" class="toggle_wrap clearfix">
+                            <div class="feature_toggle section_toggle plus"><a>Eat & Drink type</a></div>
+                            <div class="selectedList"></div>
+                            <div class="section_body" style="display:none;">
+                                <div class="checkboxItem"><asp:CheckBox ID="cbAtt35_1700" runat="server" Text="Brew Pub" /></div>
+                                <div class="checkboxItem"><asp:CheckBox ID="cbAtt35_1701" runat="server" Text="Brewery" /></div>
+                                <div class="checkboxItem"><asp:CheckBox ID="cbAtt35_1702" runat="server" Text="Cidery" /></div>
+                                <div class="checkboxItem"><asp:CheckBox ID="cbAtt35_1703" runat="server" Text="Distillery" /></div>
+                                <div class="checkboxItem"><asp:CheckBox ID="cbAtt35_1704" runat="server" Text="Specialty Food" /></div>
+                                <div class="checkboxItem"><asp:CheckBox ID="cbAtt35_1705" runat="server" Text="Taste of NS Restaurant" /></div>
+                                <div class="checkboxItem"><asp:CheckBox ID="cbAtt35_1706" runat="server" Text="Winery" /></div>
+                            </div>
+                        </div>
                     
                         <div id="dvFeature" class="toggle_wrap clearfix">
 							<div class="feature_toggle section_toggle plus"><a>Feature</a></div>
@@ -3683,6 +3740,8 @@
                                 <div id="dv11_512" class="checkboxItem"><asp:CheckBox ID="cbAtt11_512" runat="server" Text="Restaurant" /> <span id="pg_restaurant" class="pg_item">(PG)</span></div>
                                 <div id="dv11_521" class="checkboxItem"><asp:CheckBox ID="cbAtt11_521" runat="server" Text="Smoking permitted" /> <span id="pg_smoking" class="pg_item">(PG)</span></div>
                                 <div id="dv11_514"  class="checkboxItem"><asp:CheckBox ID="cbAtt11_514" runat="server" Text="Takeout" /> <span id="pg_takeout" class="pg_item">(PG)</span></div>
+                                <div id="dv11_526"  class="checkboxItem"><asp:CheckBox ID="cbAtt11_526" runat="server" Text="Tasting Room" /> </div>
+                               
                                 <div id="dv11_513" class="checkboxItem"><asp:CheckBox ID="cbAtt11_513" runat="server" Text="Tea room" /> <span id="pg_tea_room" class="pg_item">(PG)</span></div>
                                 <div id="dv11_522" style="display:none;" class="checkboxItem"><asp:CheckBox ID="cbAtt11_522" runat="server" Text="Travel agent commission" /></div>
                                 <div class="checkboxItem"><asp:CheckBox ID="cbAtt11_515" runat="server" Text="Wheelchair accessible" /> <span id="pg_wheelchair" class="pg_item">(PG)</span></div>                                
@@ -3735,6 +3794,8 @@
                                 <div id="dv15_709" class="checkboxItem" style="display:none;"><asp:CheckBox ID="cbAtt15_709" runat="server" Text="RANS" /> <span id="pg_RANS" class="pg_item">(PG)</span></div>
                                 <div id="dv15_710" class="checkboxItem"><asp:CheckBox ID="cbAtt15_710" runat="server" Text="Taste of NS" /> <span id="pg_tasteNS" class="pg_item">(PG)</span></div>
                                 <div id="dv15_711" class="checkboxItem"><asp:CheckBox ID="cbAtt15_711" runat="server" Text="Destination Hfx" /> <span id="pg_destinationHfx" style="display:none;" class="pg_item">(PG)</span> </div>
+                                <div id="dv15_713" class="checkboxItem"><asp:CheckBox ID="cbAtt15_713" runat="server" Text="Good Cheer Trail" /> </div>
+                                
                                 <br clear="all" />
                                 <div id="dvOtherMemberships" style="display:none; margin: 0 0 20px 10px">
                                     <div class="form_label"><label>Other memberships</label> <span id="pg_otherMem" class="pg_item">(PG)</span></div>
@@ -3830,7 +3891,7 @@
                                 <div class="checkboxItem"><asp:CheckBox ID="cbAtt18_883" runat="server" Text="Marina/Yacht club" /></div>
                                 <div class="checkboxItem"><asp:CheckBox ID="cbAtt18_862" runat="server" Text="Memorial/Monument" /></div>
                                 <div class="checkboxItem"><asp:CheckBox ID="cbAtt18_863" runat="server" Text="Museum/Collection" /> <span id="pg_museum" class="pg_item">(PG)</span></div>
-                                <div class="checkboxItem"><asp:CheckBox ID="cbAtt18_882" runat="server" Text="Novelty golf course" /></div>
+                                <div class="checkboxItem"><asp:CheckBox ID="cbAtt18_882" runat="server" Text="Novelty activity" /></div>
                                 <div class="checkboxItem"><asp:CheckBox ID="cbAtt18_865" runat="server" Text="Park" /> <span id="pg_park" class="pg_item">(PG)</span></div>
                                 <div class="checkboxItem"><asp:CheckBox ID="cbAtt18_880" runat="server" Text="Sailing charter" /></div>
                                 <div class="checkboxItem"><asp:CheckBox ID="cbAtt18_884" runat="server" Text="Sailing instruction" /></div>

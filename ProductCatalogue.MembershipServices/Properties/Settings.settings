@@ -16,5 +16,13 @@
     <Setting Name="LDAPServer" Type="System.String" Scope="Application">
       <Value Profile="(Default)">LDAP://naboo</Value>
     </Setting>
+    <Setting Name="ProductCatalogue4ConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=WIN-UFFK2H06NO6\sqlexpress;Initial Catalog=ProductCatalogue4;Persist Security Info=True;User ID=prodcat&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=WIN-UFFK2H06NO6\sqlexpress;Initial Catalog=ProductCatalogue4;Persist Security Info=True;User ID=prodcat</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

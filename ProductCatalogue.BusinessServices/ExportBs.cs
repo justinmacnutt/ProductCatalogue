@@ -4581,7 +4581,9 @@ namespace ProductCatalogue.BusinessServices
                              outdoorSymbolExp = GenerateOutdoorSymbolString(p, productBs.GetProductAttributes(p.id)),
                              trailDistanceExp = GenerateTrailDistanceString(p),
                              trailUsesExp = GenerateTrailUses(p, productBs.GetProductAttributes(p.id)),
-                             trailHoursExp = String.Format("•{0}", GenerateHoursStringNew(p, languageId))
+                             trailHoursExp = String.Format("•{0}", GenerateHoursStringNew(p, languageId)),
+
+                             
                          }).ToList();
 
                 
@@ -4640,11 +4642,38 @@ namespace ProductCatalogue.BusinessServices
             ws.Cells["AB1"].Value = "trailUsesExp";
             ws.Cells["AC1"].Value = "trailHoursExp";
 
+            ws.Cells["AD1"].Value = "wifi";
+            ws.Cells["AE1"].Value = "cancellationPolicy";
+            ws.Cells["AF1"].Value = "kitchenette";
+            ws.Cells["AG1"].Value = "unitLabel1";
+            ws.Cells["AH1"].Value = "unitNumber1";
+            ws.Cells["AI1"].Value = "unitLabel2";
+            ws.Cells["AJ1"].Value = "unitNumber2";
+            ws.Cells["AK1"].Value = "unitLabel3";
+            ws.Cells["AL1"].Value = "unitNumber3";
+            ws.Cells["AM1"].Value = "bedSizes";
+            ws.Cells["AN1"].Value = "bathInfo";
+            ws.Cells["AO1"].Value = "breakfastInfo";
+
+            ws.Cells["AP1"].Value = "hookups";
+            ws.Cells["AQ1"].Value = "pullThrus";
+            ws.Cells["AR1"].Value = "disposalStation";
+            ws.Cells["AS1"].Value = "campCabinTrailers";
+            ws.Cells["AT1"].Value = "swimming";
 
             ws.Cells["A2"].LoadFromCollection(printExportList);
 
             return pck;
         }
+
+
+//        a column for bed sizes (this info is not in Prod Cat checkboxes yet, so I or Justin will have to copy it from descriptions),
+//two columns for bath info (one if Justin can combine it (pvt & shared baths), but Julia can add the comma for the ones that have both private and shared),
+//a column for breakfast info
+//a column for Wi-Fi
+//a column for CXL
+//a column for H if it goes in the details line; if it's in the symbols line it would be included in that column (there are good reasons for either position, so it comes down to a matter of space and I don't know yet which line will be more problematic. I could try analyzing the 2014 or 2015 guide to see if I can figure it out.)
+//a column for number of units with each accommodation type
 
         private string GenerateFineArtsMediaString(IQueryable<ProductAttribute> paq, string languageId)
         {
@@ -5422,6 +5451,24 @@ namespace ProductCatalogue.BusinessServices
             public string trailDistanceExp { get; set; }
             public string trailUsesExp { get; set; }
             public string trailHoursExp { get; set; }
+
+            public string wifiExp { get; set; }
+            public string cancellationPolicyExp { get; set; }
+            public string kitchenExp { get; set; }
+            public string unitLabel1Exp { get; set; }
+            public string unitLabel2Exp { get; set; }
+            public string unitLabel3Exp { get; set; }
+            public string unitNumber1Exp { get; set; }
+            public string unitNumber2Exp { get; set; }
+            public string unitNumber3Exp { get; set; }
+            public string bedSizesExp { get; set; }
+            public string breakfastInfoExp { get; set; }
+
+            public string hookupsExp { get; set; }
+            public string pullThrusExp { get; set; }
+            public string disposalStationExp { get; set; }
+            public string campCabinTraiersExp { get; set; }
+            public string swimmingExp { get; set; }
         }
     }
 

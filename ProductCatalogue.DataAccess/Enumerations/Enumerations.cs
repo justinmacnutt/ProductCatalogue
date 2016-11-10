@@ -312,7 +312,8 @@ namespace ProductCatalogue.DataAccess.Enumerations
         FestivalsEvents = 10,
         Packages = 11,
         Archive = 12,
-        Trails = 13
+        Trails = 13,
+        EatAndDrink = 14
     }
 
     public enum RateType
@@ -435,7 +436,9 @@ namespace ProductCatalogue.DataAccess.Enumerations
         TrailType = 31,
         TrailPetsPolicy = 32,
         TrailSurface = 33,
-        CellService = 34
+        CellService = 34,
+        EatAndDrinkType = 35,
+        TasteOfNsType = 36
     }
 
     // Attribute Enums
@@ -643,6 +646,17 @@ namespace ProductCatalogue.DataAccess.Enumerations
         Mikmaq = 454
     }
 
+    public enum EatAndDrinkType
+    {
+        BrewPub = 1700,
+        Brewery = 1701,
+        Cidery = 1702 ,
+        Distillery = 1703,
+        SpecialtyFood = 1704,
+        TasteOfNsRestaurant= 1705,
+        Winery = 1706
+    }
+
     public enum ExhibitType
     {
         ArtisanStudios = 1301,
@@ -671,6 +685,7 @@ namespace ProductCatalogue.DataAccess.Enumerations
         PublicWashroom = 511,
         Restaurant = 512,
         SmokingPermitted = 521,
+        TastingRoom = 526,
         Takeout = 514,
         TeaRoom = 513,
         TravelAgentCommission = 522,
@@ -725,7 +740,8 @@ namespace ProductCatalogue.DataAccess.Enumerations
         Rans = 709,
         TasteOfNs = 710,
         DestinationHfx = 711,
-        Bienvenue = 712
+        Bienvenue = 712,
+        GoodCheerTrail = 713
     }
 
     public enum PetsPolicy
@@ -802,6 +818,23 @@ namespace ProductCatalogue.DataAccess.Enumerations
         CanadaSelect = 951,
         Caa = 952,
         NsApproved = 953
+    }
+
+    /*
+     * 
+     * 
+insert into AttributeGroup values (36, 'Taste of NS Type');
+
+insert into Attribute values (1750, 'Chef-inspired Casual Dining' ,36)
+insert into Attribute values (1751, 'Chef-inspired Fine Dining' ,36)
+insert into Attribute values (1752, 'Essence of Nova Scotia' ,36)
+
+     * */
+    public enum TasteOfNsType
+    {
+        CasualDining = 1750,
+        FineDining = 1751,
+        EssenceOfNs = 1752 
     }
 
     public enum TransportationType
